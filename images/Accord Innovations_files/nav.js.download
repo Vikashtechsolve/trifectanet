@@ -1,0 +1,9 @@
+let ele = document.getElementsByClassName('link-clicked');
+for(let i = 0; i < ele.length; i++){
+  if(ele[i].id == location.pathname.split('/').pop().split(".").shift()){
+    ele[i].classList.add('cust-active');
+  }
+}
+// $(document).on('click','.link-clicked', function(e) {
+//     localStorage.setItem('aciveClass',this.innerText);
+// });

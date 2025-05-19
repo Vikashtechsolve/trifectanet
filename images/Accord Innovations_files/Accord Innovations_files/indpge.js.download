@@ -1,0 +1,185 @@
+$(document).ready(function() {
+    $("#applyJobSubmit").click(function() {
+        $("#downloadcompProfile").modal("hide");
+    });
+});
+// download profile
+$("#download_comp_profile").on('submit', function (e) {
+    // $("#suc-content").html('Thank you for your request, company profile is downloaded');
+    // $("#success").css('display', 'block');
+    // $('.overlay').css('display', 'block');
+    var d = new FormData(this);
+    e.preventDefault();
+    $.ajax({
+        async: true,
+        url: 'jobsearch/profiledownload.php',
+        data: d,
+        type: 'POST',
+        processData: false,
+        contentType: false,
+        beforeSend: function () {
+            //$('#msg').show();
+            //$('.overlay2').show();
+            //$("#applybtn").attr('disabled', true);
+        },
+        success: function (responseText) {
+            // console.log(responseText);
+            document.getElementById("downloaddoc").click();
+            // location.reload();
+        },
+        complete: function () {
+            $('#msg').hide();
+            $('.overlay2').hide();
+        },
+        error: function (errorMsg) {
+            alert("Something went wrong");
+        }
+    });
+});
+
+function isCounterElementVisible($element) {
+    var topView = $(window).scrollTop();
+    var botView = topView + $(window).height();
+    var topElement = $element.offset().top;
+    var botElement = topElement + $element.height();
+    return ((botElement <= botView) && (topElement >= topView));
+    }
+
+    $(window).scroll(function() {
+    $(".counter").each(function() {
+        isOnView = isCounterElementVisible($(this));
+        if (isOnView && !$(this).hasClass('visibled')) {
+        $(this).addClass('visibled');
+        $(this).prop('Counter', 0).animate({
+            Counter: $(this).text()
+        }, {
+            duration: 3000,
+            easing: 'swing',
+            step: function(now) {
+            $(this).text(Math.ceil(now));
+            }
+        });
+        }
+    });
+    });
+
+    $(function() {
+
+        document.getElementById("hover-evt1").addEventListener("mouseover", (e)=>{
+            $("#developmentLanguagesTechnology").css("display",'block');
+        });
+
+        document.getElementById("hover-evt1").addEventListener("mouseleave", (e)=>{
+            $("#developmentLanguagesTechnology").css("display",'none');
+        });
+
+
+        document.getElementById("hover-evt2").addEventListener("mouseover", (e)=>{
+            $("#webTechnology").css("display",'block');
+        });
+
+        document.getElementById("hover-evt2").addEventListener("mouseleave", (e)=>{
+            $("#webTechnology").css("display",'none');
+        });
+
+        document.getElementById("hover-evt3").addEventListener("mouseover", (e)=>{
+            $("#mobileTechnology").css("display",'block');
+        });
+
+        document.getElementById("hover-evt3").addEventListener("mouseleave", (e)=>{
+            $("#mobileTechnology").css("display",'none');
+        });
+
+        document.getElementById("hover-evt4").addEventListener("mouseover", (e)=>{
+            $("#cloudComputingTechnology").css("display",'block');
+        });
+
+        document.getElementById("hover-evt4").addEventListener("mouseleave", (e)=>{
+            $("#cloudComputingTechnology").css("display",'none');
+        });
+
+        document.getElementById("hover-evt5").addEventListener("mouseover", (e)=>{
+            $("#devOpsTechnology").css("display",'block');
+        });
+
+        document.getElementById("hover-evt5").addEventListener("mouseleave", (e)=>{
+            $("#devOpsTechnology").css("display",'none');
+        });
+
+        document.getElementById("hover-evt6").addEventListener("mouseover", (e)=>{
+            $("#databasesTechnology").css("display",'block');
+        });
+
+        document.getElementById("hover-evt6").addEventListener("mouseleave", (e)=>{
+            $("#databasesTechnology").css("display",'none');
+        });
+
+        document.getElementById("hover-evt7").addEventListener("mouseover", (e)=>{
+            $("#dataStorageTechnology").css("display",'block');
+        });
+
+        document.getElementById("hover-evt7").addEventListener("mouseleave", (e)=>{
+            $("#dataStorageTechnology").css("display",'none');
+        });
+
+        document.getElementById("hover-evt8").addEventListener("mouseover", (e)=>{
+            $("#reportingAndAnalyticsTechnology").css("display",'block');
+        });
+
+        document.getElementById("hover-evt8").addEventListener("mouseleave", (e)=>{
+            $("#reportingAndAnalyticsTechnology").css("display",'none');
+        });
+        document.getElementById("hover-evt9").addEventListener("mouseover", (e)=>{
+            $("#qaAndTestingTechnology").css("display",'block');
+        });
+
+        document.getElementById("hover-evt9").addEventListener("mouseleave", (e)=>{
+            $("#qaAndTestingTechnology").css("display",'none');
+        });
+
+        document.getElementById("hover-evt10").addEventListener("mouseover", (e)=>{
+            $("#uxAndUiTechnology").css("display",'block');
+        });
+
+        document.getElementById("hover-evt10").addEventListener("mouseleave", (e)=>{
+            $("#uxAndUiTechnology").css("display",'none');
+        });
+		document.getElementById("hover-evt11").addEventListener("mouseleave", (e)=>{
+            $("#lowcodenocode").css("display",'none');
+        });
+		
+		document.getElementById("hover-evt11").addEventListener("mouseover", (e)=>{
+            $("#lowcodenocode").css("display",'block');
+        });
+		document.getElementById("hover-evt12").addEventListener("mouseleave", (e)=>{
+            $("#erp").css("display",'none');
+        });
+		document.getElementById("hover-evt12").addEventListener("mouseover", (e)=>{
+            $("#erp").css("display",'block');
+        });
+		
+		document.getElementById("hover-evt13").addEventListener("mouseover", (e)=>{
+            $("#gpt").css("display",'block');
+        });
+		document.getElementById("hover-evt13").addEventListener("mouseleave", (e)=>{
+            $("#gpt").css("display",'none');
+        });
+		
+		document.getElementById("hover-evt14").addEventListener("mouseleave", (e)=>{
+            $("#bigdata").css("display",'none');
+        });
+		
+		document.getElementById("hover-evt14").addEventListener("mouseover", (e)=>{
+            $("#bigdata").css("display",'block');
+        });
+		document.getElementById("hover-evt15").addEventListener("mouseleave", (e)=>{
+            $("#RPA").css("display",'none');
+        });
+		
+		document.getElementById("hover-evt15").addEventListener("mouseover", (e)=>{
+            $("#RPA").css("display",'block');
+        });
+		
+		
+		
+    });
