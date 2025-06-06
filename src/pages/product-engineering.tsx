@@ -29,7 +29,7 @@ const ProductEngineering: React.FC = () => {
               </h2>
               <div className="space-y-6 max-w-prose text-justify text-gray-700">
                 <p className="text-base md:text-lg leading-relaxed tracking-normal">
-                  Accord Innovations harnesses the potential of Artificial Intelligence (AI) to drive innovation in product engineering. Our AI-powered solutions empower you to create, sustain, and enhance exceptional products. We employ AI technologies to facilitate data-driven decision-making, improve product performance, and keep you ahead in dynamic markets. Moreover, our focus on elevating product quality ensures not only meeting but exceeding customer expectations, fostering increased satisfaction and brand loyalty.
+                  Trifectanet harnesses the potential of Artificial Intelligence (AI) to drive innovation in product engineering. Our AI-powered solutions empower you to create, sustain, and enhance exceptional products. We employ AI technologies to facilitate data-driven decision-making, improve product performance, and keep you ahead in dynamic markets. Moreover, our focus on elevating product quality ensures not only meeting but exceeding customer expectations, fostering increased satisfaction and brand loyalty.
                 </p>
               </div>
             </div>
@@ -91,7 +91,7 @@ const ProductEngineering: React.FC = () => {
               </div>
               <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">AI-Powered Product Development</h3>
               <p className="text-base text-gray-600 relative z-10 leading-relaxed flex-grow">
-              Accord Innovations leverages cutting-edge AI technologies to enhance product development. Our expertise in AI-driven solutions ensures efficient decision-making, improved product performance, and a competitive edge in rapidly evolving markets.
+              Trifectanet leverages cutting-edge AI technologies to enhance product development. Our expertise in AI-driven solutions ensures efficient decision-making, improved product performance, and a competitive edge in rapidly evolving markets.
               </p>
               <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#f47847] group-hover:w-full transition-all duration-700 ease-out"></div>
             </div>

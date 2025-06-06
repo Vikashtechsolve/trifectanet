@@ -3,7 +3,7 @@ import Hero from '../components/Hero';
 import { Users, Target, Award, Globe, Building2, MapPin, Users2, Code2, ChevronDown } from 'lucide-react';
 import { motion } from 'framer-motion';
 
-const AboutAccord: React.FC = () => {
+const AboutTrifectanet: React.FC = () => {
   useEffect(() => {
     // Add scroll reveal animation
     const handleScroll = () => {
@@ -26,8 +26,8 @@ const AboutAccord: React.FC = () => {
     <div className="min-h-screen bg-white">
       <Hero
         title="About"
-        subtitle="Accord"
-        description="Discover how Accord Innovations is transforming businesses through innovative technology solutions and exceptional service delivery."
+        subtitle="Trifecta Net"
+        description="Discover how Trifecta Net is transforming businesses through innovative technology solutions and exceptional service delivery."
         backgroundImage="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1050&q=80"
         backgroundColor="#0a3d62"
         gradientColor="#0a3d62"
@@ -60,7 +60,7 @@ const AboutAccord: React.FC = () => {
               <h2 className="text-3xl md:text-4xl font-bold text-[#0a3d62] mb-6">Company Overview</h2>
               <div className="space-y-6 max-w-prose text-justify text-gray-700">
                 <p>
-                  Accord Innovation Global Technology Solutions (AI-GTS) is a dynamic and forward-thinking global business solutions provider, committed to delivering cutting-edge digital enterprise services. Headquartered in Malaysia, with a strong presence across Singapore, Thailand, Indonesia, the Philippines, India, and the USA, we specialize in IT services that encompass infrastructure and application monitoring for both traditional and cloud data centers, automation, outsourcing, and more.
+                  Trifecta Net is a dynamic and forward-thinking global business solutions provider, committed to delivering cutting-edge digital enterprise services. Headquartered in Malaysia, with a strong presence across Singapore, Thailand, Indonesia, the Philippines, India, and the USA, we specialize in IT services that encompass infrastructure and application monitoring for both traditional and cloud data centers, automation, outsourcing, and more.
                 </p>
                 <p>
                   With expertise in open-source and enterprise solutions, we tailor our services to meet the evolving needs of businesses. Our core capabilities include IT infrastructure and cloud management, leveraging advanced automation to drive operational efficiency. We offer a comprehensive suite of services, including consulting, implementation, workflow development, and managed services for industry-leading platforms such as ServiceNow, Salesforce, Amazon Web Services (AWS), ITIL processes, and Robotic & Intelligent IT Process Automation.
@@ -104,13 +104,13 @@ const AboutAccord: React.FC = () => {
               className="space-y-6 max-w-prose text-justify text-gray-700"
             >
               <p>
-                At AI-GTS, we lead the way in Hyper Automation, Artificial Intelligence (AI), and cognitive technologies, powered by our proprietary Solution Accelerators that provide a distinct competitive edge. With over 13 years of industry experience, we have successfully helped organizations worldwide navigate their digital transformation journeys.
+                At Trifect, we lead the way in Hyper Automation, Artificial Intelligence (AI), and cognitive technologies, powered by our proprietary Solution Accelerators that provide a distinct competitive edge. With over 13 years of industry experience, we have successfully helped organizations worldwide navigate their digital transformation journeys.
               </p>
               <p>
                 Our expertise extends to Generative AI (GenAI) across various business functions, including ITSM, HRSD, IRM, DevOps, ITOM, and custom application development. Through Enterprise Service Management (ESM) services and enhanced governance solutions, we empower organizations to optimize their IT infrastructure, streamline operations, and stay ahead in an ever-evolving business landscape.
               </p>
               <p>
-                Since our inception in 2011, AI-GTS has remained committed to delivering cost-effective and innovative ESM consulting services to enterprises globally, helping them unlock new efficiencies and drive long-term success.
+                Since our inception in 2011, Trifect has remained committed to delivering cost-effective and innovative ESM consulting services to enterprises globally, helping them unlock new efficiencies and drive long-term success.
               </p>
             </motion.div>
             <motion.div 
@@ -316,4 +316,4 @@ const AboutAccord: React.FC = () => {
   );
 };
 
-export default AboutAccord;
+export default AboutTrifectanet;

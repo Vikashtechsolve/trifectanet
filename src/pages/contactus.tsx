@@ -22,69 +22,19 @@ const ContactUs: React.FC = () => {
 
   const locationData = [
     {
-      country: 'Malaysia (HQ)',
-      company: 'ACCORD INNOVATIONS SDN BHD (1157399-V)',
-      address: [
-        'Suite 2.02, Level 2, Prima 9 Avenue 2,',
-        'Block 3547, Persiaran Apec 63000,',
-        'Cyberjaya Selangor,'
-      ],
-      email: 'contact.asia@accordinnovations.com',
-      phone: '+603 8322 7700',
-      fax: '+603 8322 7711'
-    },
-    {
-      country: 'Singapore',
-      company: 'ACCORD INNOVATIONS PTE. LTD.',
-      address: [
-        '320 serangoon road',
-        '#10-09 Centrium Square',
-        'Singapore 218108'
-      ],
-      email: 'contact.asia@accordinnovations.com'
-    },
-    {
-      country: 'Indonesia',
-      company: 'PT. ACCORD INNOVATIONS INDONESIA',
-      address: [
-        'Menara Anugrah Lantai 19-A Kantor Taman E.3.3 Jl. DR. Ide Anak Agung'
-      ],
-      email: 'contact.asia@accordinnovations.com',
-      phone: '+62 21 5785 3819',
-      fax: '+62 21 5087 1291'
-    },
-    {
-      country: 'Thailand',
-      company: 'ACCORD INNOVATIONS CO. LTD.',
-      address: [
-        '163, Rajapark Building, Floor 6, Sukhumvit 21 (Asoke)',
-        'Khlong Toei Nuea, Bangkok 10110.'
-      ],
-      email: 'contact.asia@accordinnovations.com',
-      phone: '+6621233601'
-    },
-    {
       country: 'India',
-      company: 'ACCORDIA TECHNOLOGIES PRIVATE LIMITED',
+      company: 'Trifectanet Pvt. Ltd. ',
       address: [
-        '3rd Floor, Sita Nilayam, Above Fresh Choice Bakery, Waltair Main Rd,',
-        'Opposite Hsbc, Beside Raymond\'s Showroom, Waltair Uplands, Siripuram,',
-        'Visakhapatnam, Andhra Pradesh 530003, India'
+        '545,Off, Golf Course Road,',
+        'Sector 43, Gurugram,',
+        'Gurugram, Haryana 122002,',
+      
       ],
-      email: 'contact.asia@accordinnovations.com',
-      phone: '(+91) -8913102303'
+      email: 'support@trifectanet.com',
+      phone: '+91 9540622138',
+      fax: '+91 9117018454'
     },
-    {
-      country: 'USA',
-      company: 'ACCORD INNOVATIONS INC',
-      address: [
-        'Lakeline Tower 13809 Research Blvd, Suite 500',
-        'Austin, Texas 78750'
-      ],
-      email: 'contact.usa@accordinnovations.com',
-      phone: '(512)-399-3049',
-      fax: '(512)-399-3034'
-    }
+
   ];
 
   return (
@@ -188,13 +138,13 @@ const ContactUs: React.FC = () => {
                   <svg className="w-4 h-4 text-[#f47847]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>
-                  <span className="text-white text-sm md:text-base hover:text-[#f47847] transition-colors duration-300">+6.03 8322 7700</span>
+                  <span className="text-white text-sm md:text-base hover:text-[#f47847] transition-colors duration-300">+91 9540622138</span>
                 </div>
                 <div className="flex items-center space-x-2 hover:text-[#f47847] transition-colors duration-300">
                   <svg className="w-4 h-4 text-[#f47847]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
-                  <span className="text-white text-sm md:text-base hover:text-[#f47847] transition-colors duration-300">contact@accordinnovations.com</span>
+                  <span className="text-white text-sm md:text-base hover:text-[#f47847] transition-colors duration-300">support@trifectanet.com</span>
                 </div>
               </motion.div>
             </div>

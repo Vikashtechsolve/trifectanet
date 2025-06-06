@@ -237,7 +237,7 @@ const OurClientele: React.FC = () => {
               <span className="text-[#f47847]">Clients</span>
             </h1>
             <p className="text-lg md:text-xl lg:text-2xl max-w-3xl text-gray-300">
-              Discover the organizations that trust Accord Innovations to deliver exceptional solutions and drive their digital transformation.
+              Discover the organizations that trust Trifectanet to deliver exceptional solutions and drive their digital transformation.
             </p>
           </div>
           

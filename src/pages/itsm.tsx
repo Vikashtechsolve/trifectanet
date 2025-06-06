@@ -54,12 +54,12 @@ const ITSM: React.FC = () => {
             </div>
             <div className="order-2 flex flex-col justify-center h-full">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8">
-                <span className="text-[#f47847]">Accord Innovations'</span>{" "}
+                <span className="text-[#f47847]">Trifectanet'</span>{" "}
                 <span className="text-[#0a3d62]">Contribution</span>
               </h2>
               <div className="space-y-6 max-w-prose text-justify text-gray-700">
                 <p className="text-base md:text-lg leading-relaxed tracking-normal">
-                  Accord Innovations delivers comprehensive ITSM solutions that transform how organizations manage and deliver IT services. Our expertise in service desk implementation, incident management, and change management helps businesses ensure efficient and reliable service delivery.
+                  Trifectanet delivers comprehensive ITSM solutions that transform how organizations manage and deliver IT services. Our expertise in service desk implementation, incident management, and change management helps businesses ensure efficient and reliable service delivery.
                 </p>
                 <p className="text-base md:text-lg leading-relaxed tracking-normal">
                   We provide end-to-end ITSM services, from assessment and strategy development to implementation, training, and ongoing support. Our solutions are built on industry-leading platforms and best practices, ensuring that your service management capabilities evolve alongside your business needs.

@@ -28,7 +28,7 @@ const WebTechnologies: React.FC = () => {
               </h2>
               <div className="space-y-6 max-w-prose text-justify text-gray-700">
                 <p className="text-base md:text-lg leading-relaxed tracking-normal">
-                  Accord Innovations takes web development to the next level with advanced expertise in a wide array of technologies. Our proficiency spans HTML and CSS, including popular frameworks like Bootstrap, Tailwind CSS, and Materialize CSS, ensuring visually appealing and responsive designs. We leverage CSS preprocessors like SASS and LESS for efficient styling. Our JavaScript expertise covers ES6, TypeScript, and popular frameworks such as Angular, VueJS, and NuxtJS, enabling dynamic and interactive web applications.
+                  Trifectanet takes web development to the next level with advanced expertise in a wide array of technologies. Our proficiency spans HTML and CSS, including popular frameworks like Bootstrap, Tailwind CSS, and Materialize CSS, ensuring visually appealing and responsive designs. We leverage CSS preprocessors like SASS and LESS for efficient styling. Our JavaScript expertise covers ES6, TypeScript, and popular frameworks such as Angular, VueJS, and NuxtJS, enabling dynamic and interactive web applications.
                 </p>
               </div>
             </div>
@@ -56,7 +56,7 @@ const WebTechnologies: React.FC = () => {
               </h2>
               <div className="space-y-6 max-w-prose text-justify text-gray-700">
                 <p className="text-base md:text-lg leading-relaxed tracking-normal">
-                  At Accord Innovations, we understand that each web project is unique. That's why we offer tailored solutions that align with your specific requirements. Whether you need a sleek and responsive frontend, a robust and efficient backend, or a combination of both, we have the expertise to deliver. Our team collaborates closely with you to define your project goals and objectives, ensuring that the technologies and frameworks chosen are a perfect fit.
+                  At Trifectanet, we understand that each web project is unique. That's why we offer tailored solutions that align with your specific requirements. Whether you need a sleek and responsive frontend, a robust and efficient backend, or a combination of both, we have the expertise to deliver. Our team collaborates closely with you to define your project goals and objectives, ensuring that the technologies and frameworks chosen are a perfect fit.
                 </p>
               </div>
             </div>

@@ -40,7 +40,7 @@ const GenAISolutions: React.FC = () => {
             <div className="order-2 flex flex-col justify-center h-full">
               <div className="space-y-6 max-w-prose text-justify text-gray-700">
                 <p className="text-base md:text-lg leading-relaxed tracking-normal">
-                  At Accord Innovations, we understand that successful generative AI implementation requires a deep understanding of your business needs and use cases. Our approach begins with a thorough assessment of your current state and opportunities, followed by the development of a tailored AI strategy.
+                  At Trifectanet, we understand that successful generative AI implementation requires a deep understanding of your business needs and use cases. Our approach begins with a thorough assessment of your current state and opportunities, followed by the development of a tailored AI strategy.
                 </p>
                 <p className="text-base md:text-lg leading-relaxed tracking-normal">
                   We combine cutting-edge AI technologies with industry expertise to deliver solutions that drive real business value. Our team of AI specialists works closely with you throughout the implementation process, ensuring seamless integration and optimal performance.
@@ -68,7 +68,7 @@ const GenAISolutions: React.FC = () => {
             <div className="order-2 md:order-1 flex flex-col justify-center h-full">
               <div className="space-y-6 max-w-prose text-justify text-gray-700">
                 <p className="text-base md:text-lg leading-relaxed tracking-normal">
-                  Accord Innovations offers a comprehensive suite of generative AI solutions designed to address your specific business needs. From natural language processing and computer vision to predictive analytics and AI strategy consulting, our solutions leverage the latest advances in AI technology.
+                  Trifectanet offers a comprehensive suite of generative AI solutions designed to address your specific business needs. From natural language processing and computer vision to predictive analytics and AI strategy consulting, our solutions leverage the latest advances in AI technology.
                 </p>
                 <p className="text-base md:text-lg leading-relaxed tracking-normal">
                   Our team of AI experts works closely with you to understand your unique challenges and develop customized solutions that deliver measurable results. We ensure seamless integration with your existing systems and provide ongoing support to optimize performance and drive continuous improvement.

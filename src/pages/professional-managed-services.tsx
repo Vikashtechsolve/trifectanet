@@ -28,7 +28,7 @@ const ProfessionalManagedServices: React.FC = () => {
               </h2>
               <div className="space-y-6 max-w-prose text-justify text-gray-700">
                 <p className="text-base md:text-lg leading-relaxed tracking-normal">
-                  Managing an IT infrastructure and ensuring its seamless operation can be a daunting task, diverting valuable resources and attention away from core business functions. With Accord Innovations as your IT partner, you can focus on what you do best—growing your business—while we handle the intricacies of IT management.
+                  Managing an IT infrastructure and ensuring its seamless operation can be a daunting task, diverting valuable resources and attention away from core business functions. With Trifectanet as your IT partner, you can focus on what you do best—growing your business—while we handle the intricacies of IT management.
                 </p>
                 <p className="text-base md:text-lg leading-relaxed tracking-normal">
                   Our Professional Managed Services provide peace of mind, knowing that your technology is in capable hands, allowing you to stay competitive, agile, and secure in an increasingly digital world. We offer a tailored approach, understanding that each business has unique IT requirements and challenges.
@@ -55,7 +55,7 @@ const ProfessionalManagedServices: React.FC = () => {
             </div>
             <div className="order-2 flex flex-col justify-center h-full">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8">
-                <span className="text-[#f47847]">Accord Innovations'</span>{" "}
+                <span className="text-[#f47847]">Trifectanet'</span>{" "}
                 <span className="text-[#0a3d62]">Contribution</span>
               </h2>
               <div className="space-y-6 max-w-prose text-justify text-gray-700">

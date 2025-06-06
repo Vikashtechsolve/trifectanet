@@ -23,7 +23,7 @@ const Home: React.FC = () => {
     {
       title: "INNOVATIVE SOLUTIONS",
       subtitle: "TRANSFORM YOUR BUSINESS",
-      description: "Join Accord Innovations to discover how our cutting-edge solutions drive business transformation and growth.",
+      description: "Join Trifecta Net to discover how our cutting-edge solutions drive business transformation and growth.",
     },
     {
       title: "DIGITAL INNOVATORS",

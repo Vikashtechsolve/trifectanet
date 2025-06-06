@@ -37,6 +37,7 @@ const Header: React.FC<HeaderProps> = () => {
     if (label === 'Career' || label === 'Contact Us') {
       // For Career and Contact Us, prevent dropdown behavior
       setMobileMenuOpen(false);
+      handleNavigation(label);
       return;
     }
     if (activeMenu === label) {
@@ -52,9 +53,11 @@ const Header: React.FC<HeaderProps> = () => {
     if (label === 'Career') {
       navigate('/career');
     } else if (label === 'Contact Us') {
-      navigate( '/contact');
+      navigate('/contact');
     } else if (label === 'Overview') {
-      navigate( '/overview');
+      navigate('/overview');
+    } else if (label === 'About') {
+      navigate('/about');
     }
   };
 
@@ -86,7 +89,7 @@ const Header: React.FC<HeaderProps> = () => {
                   </svg>
                 </div>
                 {/* Text logo */}
-                <img src="/images/accordlogo.png" alt="Accord Innovations" className="w-16 h-12 md:w-20 md:h-16 mr-2" />
+                <img src="/images/Trifectanet_logo.png" alt="Trifecta Net" className="w-28 h-28 md:w-26 md:h-16 mr-6 mt-2" />
                 <span className="text-xl sm:text-2xl font-bold text-white whitespace-nowrap">
                   <span className="text-[#f47847]"> </span>
                 </span>

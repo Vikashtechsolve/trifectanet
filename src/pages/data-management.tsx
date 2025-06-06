@@ -28,7 +28,7 @@ const DataManagement: React.FC = () => {
               </h2>
               <div className="space-y-6 max-w-prose text-justify text-gray-700">
                 <p className="text-base md:text-lg leading-relaxed tracking-normal">
-                  At Accord Innovations, we take a comprehensive approach to data management. Our methodology begins with a thorough assessment of your current data infrastructure, identifying areas for improvement and optimization. We then develop a tailored strategy that addresses your specific business needs, ensuring your data is not only secure but also accessible and actionable.
+                  At Trifectanet, we take a comprehensive approach to data management. Our methodology begins with a thorough assessment of your current data infrastructure, identifying areas for improvement and optimization. We then develop a tailored strategy that addresses your specific business needs, ensuring your data is not only secure but also accessible and actionable.
                 </p>
               </div>
             </div>
@@ -57,7 +57,7 @@ const DataManagement: React.FC = () => {
               </h2>
               <div className="space-y-6 max-w-prose text-justify text-gray-700">
                 <p className="text-base md:text-lg leading-relaxed tracking-normal">
-                  Accord Innovations provides end-to-end data management solutions that transform your data into a strategic asset. Our services include data governance, quality management, integration, and analytics. We implement robust security measures and compliance protocols to protect your sensitive information while ensuring your data is accessible and actionable for informed decision-making.
+                  Trifectanet provides end-to-end data management solutions that transform your data into a strategic asset. Our services include data governance, quality management, integration, and analytics. We implement robust security measures and compliance protocols to protect your sensitive information while ensuring your data is accessible and actionable for informed decision-making.
                 </p>
               </div>
             </div>

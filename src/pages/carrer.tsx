@@ -85,7 +85,7 @@ const Career: React.FC = () => {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-xl md:text-2xl max-w-3xl text-gray-200"
             >
-              Build Your Career with Accord Innovations
+              Build Your Career with Trifecta Net
             </motion.p>
             <motion.p 
               initial={{ opacity: 0, y: 20 }}
@@ -151,7 +151,7 @@ const Career: React.FC = () => {
 
       {/* Why Join Us Section */}
       <div className={`bg-[#0C4A6E] rounded-2xl p-12 text-white transition-all duration-1000 ${isVisible.whyJoinUs ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-        <h2 className="text-3xl font-bold mb-8 text-center">Why Join Accord Innovations?</h2>
+        <h2 className="text-3xl font-bold mb-8 text-center">Why Join Trifecta?</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="text-center transform hover:scale-105 transition-all duration-300">
             <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -199,10 +199,10 @@ const Career: React.FC = () => {
             <div className="text-center mb-16">
               <h2 className={`text-4xl font-bold text-gray-900 mb-4 transition-all duration-1000 ${isVisible.testimonials ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
                 <span className="text-[#0C4A6E]">Life at</span>{" "}
-                <span className="text-[#f47847]">Accord</span>
+                <span className="text-[#f47847]">Trifecta</span>
               </h2>
               <p className={`text-xl text-gray-600 max-w-3xl mx-auto transition-all duration-1000 delay-200 ${isVisible.testimonials ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-                Hear from our team members about their experiences and what makes Accord Innovations a great place to work
+                Hear from our team members about their experiences and what makes Trifectanet a great place to work
               </p>
             </div>
 
@@ -227,7 +227,7 @@ const Career: React.FC = () => {
                     <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
                   </svg>
                   <p className="text-gray-600 italic">
-                    "Working at Accord has been transformative for my career. The collaborative environment and focus on innovation have allowed me to grow both personally and professionally. The work-life balance is excellent, and I've never felt more valued as an employee."
+                    "Working at Trifectanethas been transformative for my career. The collaborative environment and focus on innovation have allowed me to grow both personally and professionally. The work-life balance is excellent, and I've never felt more valued as an employee."
                   </p>
                 </div>
                 <div className="flex items-center">
@@ -262,7 +262,7 @@ const Career: React.FC = () => {
                     <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
                   </svg>
                   <p className="text-gray-600 italic">
-                    "The projects I work on at Accord are challenging and meaningful. I've had the opportunity to apply cutting-edge machine learning techniques to solve real-world problems. The company invests in our professional development, and I've attended several conferences and training programs."
+                    "The projects I work on at Trifectanetare challenging and meaningful. I've had the opportunity to apply cutting-edge machine learning techniques to solve real-world problems. The company invests in our professional development, and I've attended several conferences and training programs."
                   </p>
                 </div>
                 <div className="flex items-center">
@@ -297,7 +297,7 @@ const Career: React.FC = () => {
                     <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
                   </svg>
                   <p className="text-gray-600 italic">
-                    "The design team at Accord is incredibly collaborative. We work closely with developers and clients to create beautiful, functional interfaces. I appreciate the company's commitment to work-life balance and the flexible remote work options."
+                    "The design team at Trifectanetis incredibly collaborative. We work closely with developers and clients to create beautiful, functional interfaces. I appreciate the company's commitment to work-life balance and the flexible remote work options."
                   </p>
                 </div>
                 <div className="flex items-center">
@@ -376,7 +376,7 @@ const Career: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">Offer & Onboarding</h3>
-                  <p className="text-gray-600">Receive an offer letter and begin your journey with Accord Innovations after completing the onboarding process.</p>
+                  <p className="text-gray-600">Receive an offer letter and begin your journey with Trifectanet after completing the onboarding process.</p>
                 </div>
               </div>
             </div>
@@ -594,7 +594,7 @@ const Career: React.FC = () => {
 
       {/* Benefits Section */}
       <div className={`bg-[#0C4A6E] rounded-2xl p-12 text-white transition-all duration-1000 ${isVisible.benefits ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-        <h2 className="text-3xl font-bold mb-8 text-center">Benefits of Working at Accord Innovations</h2>
+        <h2 className="text-3xl font-bold mb-8 text-center">Benefits of Working at Trifectanet</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="text-center transform hover:scale-105 transition-all duration-300">
             <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4">

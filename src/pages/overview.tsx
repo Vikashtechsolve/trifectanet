@@ -70,7 +70,7 @@ const Overview: React.FC = () => {
               </h2>
               <div className="space-y-4 md:space-y-6"> {/* Adjusted spacing */}
                 <p className="text-base md:text-lg text-gray-700 text-justify"> {/* Adjusted responsive text size */}
-                  At Accord Innovations, we harness the power of technology and develop innovative solutions that cater to your diverse needs in this rapidly evolving market. We are the leaders in cutting-edge technology, analytics, and consulting services.
+                  At Trifectanet, we harness the power of technology and develop innovative solutions that cater to your diverse needs in this rapidly evolving market. We are the leaders in cutting-edge technology, analytics, and consulting services.
                 </p>
                 <p className="text-base md:text-lg text-gray-700 text-justify">
                   With an unwavering passion for technology, determination to solve complex problems, and a vision to create revolutionary solutions, we ensure sophisticated visual appeal, seamless usability and substantial profits.

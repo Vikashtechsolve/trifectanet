@@ -28,7 +28,7 @@ const SaasCloud: React.FC = () => {
               </h2>
               <div className="space-y-6 max-w-prose text-justify text-gray-700">
                 <p className="text-base md:text-lg leading-relaxed tracking-normal">
-                  At Accord Innovations, we understand that business needs evolve, and scalability is essential. Our cloud and SaaS solutions are designed to grow with your organization, ensuring you can seamlessly accommodate increased user demands and expanding data volumes. Whether you're a startup with ambitious growth plans or a well-established enterprise, our scalable solutions adapt to your requirements, keeping you future-ready in the dynamic digital landscape.
+                  At Trifectanet, we understand that business needs evolve, and scalability is essential. Our cloud and SaaS solutions are designed to grow with your organization, ensuring you can seamlessly accommodate increased user demands and expanding data volumes. Whether you're a startup with ambitious growth plans or a well-established enterprise, our scalable solutions adapt to your requirements, keeping you future-ready in the dynamic digital landscape.
                 </p>
               </div>
             </div>
@@ -56,7 +56,7 @@ const SaasCloud: React.FC = () => {
               </h2>
               <div className="space-y-6 max-w-prose text-justify text-gray-700">
                 <p className="text-base md:text-lg leading-relaxed tracking-normal">
-                  Data security and compliance are non-negotiable in today's business environment. Accord Innovations places the utmost emphasis on safeguarding your data. We implement robust security measures and compliance protocols to protect your sensitive information. Our cloud-based solutions are engineered with multi-layered security, encryption, and access controls. Rest assured that your data is not only accessible but also secure, meeting the highest industry standards and regulatory requirements.
+                  Data security and compliance are non-negotiable in today's business environment. Trifectanet places the utmost emphasis on safeguarding your data. We implement robust security measures and compliance protocols to protect your sensitive information. Our cloud-based solutions are engineered with multi-layered security, encryption, and access controls. Rest assured that your data is not only accessible but also secure, meeting the highest industry standards and regulatory requirements.
                 </p>
               </div>
             </div>

@@ -28,7 +28,7 @@ const DataAnalyticsBusinessIntelligence: React.FC = () => {
               </h2>
               <div className="space-y-6 max-w-prose text-justify text-gray-700">
                 <p className="text-base md:text-lg leading-relaxed tracking-normal">
-                  At Accord Innovations, we take a comprehensive approach to data analytics and business intelligence. We begin by understanding your business objectives, data sources, and key performance indicators to design a tailored analytics strategy.
+                  At Trifectanet, we take a comprehensive approach to data analytics and business intelligence. We begin by understanding your business objectives, data sources, and key performance indicators to design a tailored analytics strategy.
                 </p>
                 <p className="text-base md:text-lg leading-relaxed tracking-normal">
                   Our methodology focuses on data quality, integration, and visualization to ensure that your analytics solutions provide actionable insights. We follow an iterative process that allows for continuous refinement and adaptation to changing business needs.
@@ -55,12 +55,12 @@ const DataAnalyticsBusinessIntelligence: React.FC = () => {
             </div>
             <div className="order-2 flex flex-col justify-center h-full">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8">
-                <span className="text-[#f47847]">Accord Innovations'</span>{" "}
+                <span className="text-[#f47847]">Trifectanet'</span>{" "}
                 <span className="text-[#0a3d62]">Contribution</span>
               </h2>
               <div className="space-y-6 max-w-prose text-justify text-gray-700">
                 <p className="text-base md:text-lg leading-relaxed tracking-normal">
-                  Accord Innovations delivers comprehensive data analytics and business intelligence solutions that transform how organizations make decisions. Our expertise in data integration, visualization, and predictive analytics helps businesses uncover valuable insights and drive growth.
+                  Trifectanet delivers comprehensive data analytics and business intelligence solutions that transform how organizations make decisions. Our expertise in data integration, visualization, and predictive analytics helps businesses uncover valuable insights and drive growth.
                 </p>
                 <p className="text-base md:text-lg leading-relaxed tracking-normal">
                   We provide end-to-end analytics services, from data assessment and strategy development to implementation, training, and ongoing support. Our solutions are built on industry-leading platforms and best practices, ensuring that your analytics capabilities evolve alongside your business needs.

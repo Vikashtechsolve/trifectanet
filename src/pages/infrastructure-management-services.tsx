@@ -27,7 +27,7 @@ const InfrastructureManagementServices: React.FC = () => {
               </h2>
               <div className="space-y-6 max-w-prose text-justify text-gray-700">
                 <p className="text-base md:text-lg leading-relaxed tracking-normal">
-                It encompasses the end-to-end oversight, maintenance, and optimization of your entire IT environment, from servers and networks to storage and cloud resources. At Accord Innovations, we understand that each business has unique infrastructure needs, which is why our IMS solutions are tailored to align perfectly with your specific requirements. Our seasoned experts take a proactive approach, continuously monitoring, managing, and enhancing your infrastructure to keep it in peak condition.
+                It encompasses the end-to-end oversight, maintenance, and optimization of your entire IT environment, from servers and networks to storage and cloud resources. At Trifectanet, we understand that each business has unique infrastructure needs, which is why our IMS solutions are tailored to align perfectly with your specific requirements. Our seasoned experts take a proactive approach, continuously monitoring, managing, and enhancing your infrastructure to keep it in peak condition.
                 </p>
               </div>
             </div>
@@ -55,7 +55,7 @@ const InfrastructureManagementServices: React.FC = () => {
               </h2>
               <div className="space-y-6 max-w-prose text-justify text-gray-700">
                 <p className="text-base md:text-lg leading-relaxed tracking-normal">
-                Accord Innovations boasts a team of highly skilled and certified professionals with deep expertise in diverse technologies, platforms, and industry best practices. Our IMS experts leverage cutting-edge tools and methodologies to provide round-the-clock monitoring and management of your infrastructure. We employ predictive analytics and proactive maintenance to identify and address potential issues before they impact your operations. From on-premises data centers to hybrid and cloud environments, we offer a comprehensive suite of IMS solutions that ensure your infrastructure remains agile, secure, and scalable.
+                Trifectanet boasts a team of highly skilled and certified professionals with deep expertise in diverse technologies, platforms, and industry best practices. Our IMS experts leverage cutting-edge tools and methodologies to provide round-the-clock monitoring and management of your infrastructure. We employ predictive analytics and proactive maintenance to identify and address potential issues before they impact your operations. From on-premises data centers to hybrid and cloud environments, we offer a comprehensive suite of IMS solutions that ensure your infrastructure remains agile, secure, and scalable.
                 </p>
                 <p className="text-base md:text-lg leading-relaxed tracking-normal">
                   We provide end-to-end infrastructure services, from assessment and planning to implementation, monitoring, and ongoing support. Our solutions are built on industry-leading platforms and best practices, ensuring that your infrastructure evolves alongside your business needs while maintaining optimal performance and security.
@@ -101,7 +101,7 @@ const InfrastructureManagementServices: React.FC = () => {
               </div>
               <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Transformation Advisory and Global Systems Integration</h3>
               <p className="text-base text-gray-600 relative z-10 leading-relaxed flex-grow">
-              Within Accord Innovations, we address our clients' immediate and strategic business objectives. This practice maps out a clear transformation pathway, ensuring the development of appropriate IT infrastructure to meet both current and future requirements.
+              Within Trifectanet, we address our clients' immediate and strategic business objectives. This practice maps out a clear transformation pathway, ensuring the development of appropriate IT infrastructure to meet both current and future requirements.
               </p>
               <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#f47847] group-hover:w-full transition-all duration-700 ease-out"></div>
             </div>

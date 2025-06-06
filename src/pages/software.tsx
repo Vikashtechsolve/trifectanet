@@ -54,14 +54,14 @@ const Software: React.FC = () => {
       </div>
       <div className="order-2 self-center">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8">
-          <span className="text-[#f47847]">How Accord Innovations Can Help</span>
+          <span className="text-[#f47847]">How Trifectanet Can Help</span>
         </h2>
         <div className="space-y-6 max-w-prose text-justify text-gray-700">
           <p className="text-base md:text-lg leading-relaxed tracking-normal">
-            At Accord Innovations, we specialize in harnessing the power of technology to address the unique challenges of the software industry. Our tailored IT solutions cater to Independent Software Vendors (ISVs) and software product companies.
+            At Trifectanet, we specialize in harnessing the power of technology to address the unique challenges of the software industry. Our tailored IT solutions cater to Independent Software Vendors (ISVs) and software product companies.
           </p>
           <p className="text-base md:text-lg leading-relaxed tracking-normal">
-            We offer a comprehensive suite of services, including consulting, product engineering, IT, BPO, and infrastructure solutions. By partnering with Accord Innovations, software companies can reduce R&D costs, accelerate time-to-market, and maintain a competitive edge in an ever-evolving industry landscape.
+            We offer a comprehensive suite of services, including consulting, product engineering, IT, BPO, and infrastructure solutions. By partnering with Trifectanet, software companies can reduce R&D costs, accelerate time-to-market, and maintain a competitive edge in an ever-evolving industry landscape.
           </p>
         </div>
       </div>
@@ -121,7 +121,7 @@ const Software: React.FC = () => {
                 <Database size={32} />
               </div>
               <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Compliance and Regulatory Support</h3>
-              <p className="text-gray-600 relative z-10">Regulatory compliance is non-negotiable in finance. We offer comprehensive solutions to automate compliance processes, ensuring that your institution remains in line with the latest regulations. Stay agile and adapt to changing compliance requirements effortlessly with Accord Innovations.</p>
+              <p className="text-gray-600 relative z-10">Regulatory compliance is non-negotiable in finance. We offer comprehensive solutions to automate compliance processes, ensuring that your institution remains in line with the latest regulations. Stay agile and adapt to changing compliance requirements effortlessly with Trifectanet.</p>
               <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#f47847] group-hover:w-full transition-all duration-700 ease-out"></div>
             </div>
           </div>

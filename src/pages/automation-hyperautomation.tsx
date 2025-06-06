@@ -59,12 +59,12 @@ const AutomationHyperautomation: React.FC = () => {
             </div>
             <div className="order-2 flex flex-col justify-center h-full">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8">
-                <span className="text-[#f47847]">Accord Innovations'</span>{" "}
+                <span className="text-[#f47847]">Trifectanet'</span>{" "}
                 <span className="text-[#0a3d62]">Contribution</span>
               </h2>
               <div className="space-y-6 max-w-prose text-justify text-gray-700">
                 <p className="text-base md:text-lg leading-relaxed tracking-normal">
-                Accord Innovations delivers comprehensive automation and hyperautomation solutions that transform how organizations operate. Our expertise in RPA, workflow automation, and intelligent process automation helps businesses achieve significant efficiency gains and cost savings.
+                Trifectanet delivers comprehensive automation and hyperautomation solutions that transform how organizations operate. Our expertise in RPA, workflow automation, and intelligent process automation helps businesses achieve significant efficiency gains and cost savings.
                 </p>
                 <p className="text-base md:text-lg leading-relaxed tracking-normal">
                 We provide end-to-end automation services, from process assessment and strategy development to implementation, training, and ongoing support. Our solutions are built on industry-leading platforms and best practices, ensuring that your automation capabilities evolve alongside your business needs.

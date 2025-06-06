@@ -44,14 +44,14 @@ const ValueProposition: React.FC = () => {
               className="flex flex-col justify-center"
             >
               <h2 className="text-4xl md:text-5xl font-bold mb-8">
-                <span className="text-[#0a3d62]">Accord Innovations: Your Partner for Success</span>{" "}
+                <span className="text-[#0a3d62]">Trifectanet: Providing a Complete Suite of IT Solutions</span>{" "}
               </h2>
               <div className="space-y-6">
                 <p className="text-lg text-gray-700 text-justify">
-                  At Accord Innovations, we proudly occupy the vanguard of IT solutions, setting new standards for excellence while delivering unparalleled services. Our unwavering commitment lies in curating the perfect amalgamation of reliability, adaptability, and cutting-edge innovation.
+                  At Trifectanet, we proudly occupy the vanguard of IT solutions, setting new standards for excellence while delivering unparalleled services. Our unwavering commitment lies in curating the perfect amalgamation of reliability, adaptability, and cutting-edge innovation.
                 </p>
                 <p className="text-lg text-gray-700 text-justify">
-                  At the heart of Accord Innovations, lies a passion for inventive problem-solving, a drive for excellence, and an unmatched dedication towards our clients. With a steadfast focus on your success, we pledge to be your trusted partner, equipping you with the tools, strategies, and support necessary to thrive in an ever-evolving digital landscape. Together, let's chart the course to your future achievements, hand in hand with Accord Innovations.
+                  At the heart of Trifectanet, lies a passion for inventive problem-solving, a drive for excellence, and an unmatched dedication towards our clients. With a steadfast focus on your success, we pledge to be your trusted partner, equipping you with the tools, strategies, and support necessary to thrive in an ever-evolving digital landscape. Together, let's chart the course to your future achievements, hand in hand with Trifectanet.
                 </p>
               </div>
             </motion.div>

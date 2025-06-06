@@ -29,7 +29,7 @@ const menuData: MenuData = {
   Products: {
     'Featured products': {
       items: [
-        { name: 'About Accord Innovations', link: '/about-accord' },
+        { name: 'About Trifectanet', link: '/about-accord' },
         { name: 'Overview', link: '/overview' },
         { name: 'Vision & Mission', link: '/vision-mission' },
         { name: 'Our Story', link: '/our-story' },
@@ -222,7 +222,7 @@ const menuData: MenuData = {
   About: {
     'About Us': {
       items: [
-        { name: 'About Accord Innovations', link: '/about-accord' },
+        { name: 'About Trifectanet', link: '/about-Trifectanet' },
         { name: 'Overview', link: '/overview' },
         { name: 'Vision & Mission', link: '/vision-mission' },
         { name: 'Our Story', link: '/our-story' },

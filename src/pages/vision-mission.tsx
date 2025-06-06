@@ -52,7 +52,7 @@ const VisionMission: React.FC = () => {
               </h2>
               <div className="space-y-4 md:space-y-6"> {/* Adjusted spacing */}
                 <p className="text-base md:text-lg text-gray-700 leading-relaxed"> {/* Adjusted responsive text size */}
-                  We pride ourselves on being a globally enabled and trusted advisor, guiding businesses to overcome their toughest challenges. At Accord Innovations, we acknowledge that one size does not fit all, and hence our solutions are tailor-made to specifically adapt readily to our client's unique needs. With transparency and partnership at the core, we ensure quality-driven and cost-effective solutions.
+                  We pride ourselves on being a globally enabled and trusted advisor, guiding businesses to overcome their toughest challenges. At Trifectanet, we acknowledge that one size does not fit all, and hence our solutions are tailor-made to specifically adapt readily to our client's unique needs. With transparency and partnership at the core, we ensure quality-driven and cost-effective solutions.
                 </p>
               </div>
             </div>
@@ -84,7 +84,7 @@ const VisionMission: React.FC = () => {
               </h2>
               <div className="space-y-4 md:space-y-6"> {/* Adjusted spacing */}
                 <p className="text-base md:text-lg text-gray-700 leading-relaxed"> {/* Adjusted responsive text size */}
-                  At Accord Innovations, our mission is to propel businesses towards excellence by crafting tailor-made, innovative solutions. We strive to blend coming-of-age technology, determination, and long-standing industry expertise to exceed the expectations of our esteemed clients. With a commitment to quality, cost-effectiveness, and global leadership, we aim to be the dependable partner that harnesses the power of technology to empower growth and transform challenges into opportunities.
+                  At Trifectanet, our mission is to propel businesses towards excellence by crafting tailor-made, innovative solutions. We strive to blend coming-of-age technology, determination, and long-standing industry expertise to exceed the expectations of our esteemed clients. With a commitment to quality, cost-effectiveness, and global leadership, we aim to be the dependable partner that harnesses the power of technology to empower growth and transform challenges into opportunities.
                 </p>
               </div>
             </div>

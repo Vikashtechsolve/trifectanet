@@ -30,13 +30,13 @@ const PDPA: React.FC = () => {
               Subject to subsection (1), this Act applies to a person in respect of personal data if— (a) the person is established in Malaysia and the personal data is processed, whether or not in the context of that establishment, by that person or any other person employed or engaged by that establishment; or (b) the person is not established in Malaysia, but uses equipment in Malaysia for processing the personal data otherwise than for the purposes of transit through Malaysia.
             </p>
             <p className="text-gray-600 leading-relaxed mb-4">
-              This Personal Data Protection Notice explains on how Accord Innovations uses your personal data.
+              This Personal Data Protection Notice explains on how Trifectanet uses your personal data.
             </p>
             <p className="text-gray-600 leading-relaxed mb-4">
-              Accord Innovations is fully committed to ensure that our processing of personal data complies with the Personal Data Protection Act 2010 (PDPA).
+              Trifectanet is fully committed to ensure that our processing of personal data complies with the Personal Data Protection Act 2010 (PDPA).
             </p>
             <p className="text-gray-600 leading-relaxed">
-              This Notice relates to your personal data that you have voluntarily provided to Accord Innovations during your access to our services.
+              This Notice relates to your personal data that you have voluntarily provided to Trifectanet during your access to our services.
             </p>
           </section>
 

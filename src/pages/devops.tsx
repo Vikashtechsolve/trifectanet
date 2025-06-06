@@ -53,7 +53,7 @@ const DevOps: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 md:mb-16">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-              <span className="text-[#f47847]">Accord Innovations'</span>{" "}
+              <span className="text-[#f47847]">Trifectanet'</span>{" "}
               <span className="text-[#0a3d62]">Contribution</span>
             </h2>
           </div>

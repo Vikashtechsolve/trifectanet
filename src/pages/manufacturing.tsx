@@ -49,26 +49,26 @@ const Manufacturing: React.FC = () => {
       </div>
     </div>
 
-    {/* Accord Innovations' Contribution Section - Image Left, Content Right */}
+    {/* Trifectanet' Contribution Section - Image Left, Content Right */}
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
       <div className="relative order-1 self-center">
         <img 
           src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-          alt="Accord Innovations' Contribution" 
+          alt="Trifectanet' Contribution" 
           className="rounded-lg shadow-xl w-full h-[300px] md:h-[350px] object-cover"
         />
       </div>
       <div className="order-2 self-center">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8">
-          <span className="text-[#f47847]">Accord Innovations'</span>{" "}
+          <span className="text-[#f47847]">Trifectanet'</span>{" "}
           <span className="text-[#0a3d62]">Contribution</span>
         </h2>
         <div className="space-y-6 max-w-prose text-justify text-gray-700">
           <p className="text-base md:text-lg leading-relaxed tracking-normal">
-            Accord Innovations delivers comprehensive IT solutions designed specifically for the manufacturing sector. Our expertise in industrial automation, predictive maintenance, and quality management systems helps organizations optimize their operations and enhance productivity.
+            Trifectanet delivers comprehensive IT solutions designed specifically for the manufacturing sector. Our expertise in industrial automation, predictive maintenance, and quality management systems helps organizations optimize their operations and enhance productivity.
           </p>
           <p className="text-base md:text-lg leading-relaxed tracking-normal">
-            We leverage cutting-edge technologies such as IoT, AI, and cloud computing to enable smart manufacturing, real-time monitoring, and data-driven decision making. With Accord Innovations as your technology partner, you can achieve operational excellence and drive sustainable growth in the manufacturing industry.
+            We leverage cutting-edge technologies such as IoT, AI, and cloud computing to enable smart manufacturing, real-time monitoring, and data-driven decision making. With Trifectanet as your technology partner, you can achieve operational excellence and drive sustainable growth in the manufacturing industry.
           </p>
         </div>
       </div>

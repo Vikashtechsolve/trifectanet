@@ -28,7 +28,7 @@ const ArtificialIntelligence: React.FC = () => {
               </h2>
               <div className="space-y-6 max-w-prose text-justify text-gray-700">
                 <p className="text-base md:text-lg leading-relaxed tracking-normal">
-                  At Accord Innovations, we take a strategic approach to artificial intelligence implementation. We begin by understanding your business challenges, identifying opportunities where AI can deliver significant value, and developing a tailored AI strategy.
+                  At Trifectanet, we take a strategic approach to artificial intelligence implementation. We begin by understanding your business challenges, identifying opportunities where AI can deliver significant value, and developing a tailored AI strategy.
                 </p>
                 <p className="text-base md:text-lg leading-relaxed tracking-normal">
                   Our methodology combines data analysis, machine learning expertise, and industry best practices to create AI solutions that drive real business outcomes. We emphasize ethical AI development, transparency, and continuous improvement throughout the implementation process.
@@ -55,12 +55,12 @@ const ArtificialIntelligence: React.FC = () => {
             </div>
             <div className="order-2 flex flex-col justify-center h-full">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8">
-                <span className="text-[#f47847]">Accord Innovations'</span>{" "}
+                <span className="text-[#f47847]">Trifectanet'</span>{" "}
                 <span className="text-[#0a3d62]">Contribution</span>
               </h2>
               <div className="space-y-6 max-w-prose text-justify text-gray-700">
                 <p className="text-base md:text-lg leading-relaxed tracking-normal">
-                  Accord Innovations delivers cutting-edge AI solutions that transform how organizations operate and compete. Our expertise in machine learning, natural language processing, and computer vision helps businesses unlock new opportunities and drive innovation.
+                  Trifectanet delivers cutting-edge AI solutions that transform how organizations operate and compete. Our expertise in machine learning, natural language processing, and computer vision helps businesses unlock new opportunities and drive innovation.
                 </p>
                 <p className="text-base md:text-lg leading-relaxed tracking-normal">
                   We provide end-to-end AI services, from strategy development and data preparation to model development, deployment, and ongoing optimization. Our solutions are built on industry-leading platforms and best practices, ensuring that your AI capabilities evolve alongside your business needs.

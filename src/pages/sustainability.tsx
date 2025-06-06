@@ -35,7 +35,7 @@ const Sustainability: React.FC = () => {
             </h2>
             <div className="space-y-6 max-w-prose text-justify text-gray-700">
               <p className="text-base md:text-lg leading-relaxed tracking-normal">
-                At Accord Innovations, our overarching objective is to seamlessly blend technological excellence with a conscientious commitment to sustainability. We firmly believe that every action, no matter how small, has the potential to create profound and lasting impact. Sustainability isn't a mere buzzword in our ethos, it's a pledge that guides our daily operations.
+                At Trifectanet, our overarching objective is to seamlessly blend technological excellence with a conscientious commitment to sustainability. We firmly believe that every action, no matter how small, has the potential to create profound and lasting impact. Sustainability isn't a mere buzzword in our ethos, it's a pledge that guides our daily operations.
               </p>
               <p className="text-base md:text-lg leading-relaxed tracking-normal">
                 In our day-to-day functioning, we hold ourselves accountable to a higher standard. From embracing energy-efficient office practices to cultivating purposeful partnerships, every decision we make is underpinned by a genuine concern for the environment and society at large. We recognize that our choices today shape the world of tomorrow, and it's a responsibility we wholeheartedly embrace.

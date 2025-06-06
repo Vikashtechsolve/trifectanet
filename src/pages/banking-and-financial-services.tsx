@@ -109,7 +109,7 @@ const BankingAndFinancialServices: React.FC = () => {
               </div>
               <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Compliance and Regulatory Support</h3>
               <p className="text-base text-gray-600 relative z-10 leading-relaxed flex-grow">
-                Regulatory compliance is non-negotiable in finance. We offer comprehensive solutions to automate compliance processes, ensuring that your institution remains in line with the latest regulations. Stay agile and adapt to changing compliance requirements effortlessly with Accord Innovations.
+                Regulatory compliance is non-negotiable in finance. We offer comprehensive solutions to automate compliance processes, ensuring that your institution remains in line with the latest regulations. Stay agile and adapt to changing compliance requirements effortlessly with Trifectanet.
               </p>
               <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#f47847] group-hover:w-full transition-all duration-700 ease-out"></div>
             </div>

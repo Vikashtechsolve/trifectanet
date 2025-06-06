@@ -19,10 +19,10 @@ const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-wrap">
           <div className="w-full lg:w-1/4 mb-8">
-            <img src="/images/accordlogo.png" alt="Accord Innovations Logo" className="h-12 mb-4" />
+            <img src="/images/Trifectanet_logo.png " alt="Trifecta Net Logo" className="h-12 w-auto mb-4" />
             <p className="mb-2">People-Powered Performance</p>
-            <p className="mb-2">GL: +6.03 8322 7700</p>
-            <p className="mb-2">contact@accordinnovations.com</p>
+            <p className="mb-2">+91 9540622138, +91 9117018454</p>
+            <p className="mb-2">support@trifectanet.com</p>
           </div>
           
           <FooterColumn title="Main Links">
@@ -57,7 +57,7 @@ const Footer: React.FC = () => {
         </div>
         
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400 text-sm">
-          <p>© 2023 Accord Innovations | All Rights Reserved.</p>
+          <p>© 2023 Trifecta Net | All Rights Reserved.</p>
         </div>
       </div>
     </footer>

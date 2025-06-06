@@ -28,7 +28,7 @@ const AiChatbot: React.FC = () => {
               </h2>
               <div className="space-y-6 max-w-prose text-justify text-gray-700">
                 <p className="text-base md:text-lg leading-relaxed tracking-normal">
-                  At Accord Innovations, we take a strategic approach to AI chatbot development. Our methodology begins with understanding your business needs and customer interactions, followed by designing a customized chatbot solution that aligns with your brand voice and business objectives. We leverage advanced AI technologies to create intelligent, context-aware chatbots that deliver exceptional user experiences.
+                  At Trifectanet, we take a strategic approach to AI chatbot development. Our methodology begins with understanding your business needs and customer interactions, followed by designing a customized chatbot solution that aligns with your brand voice and business objectives. We leverage advanced AI technologies to create intelligent, context-aware chatbots that deliver exceptional user experiences.
                 </p>
               </div>
             </div>
@@ -57,7 +57,7 @@ const AiChatbot: React.FC = () => {
               </h2>
               <div className="space-y-6 max-w-prose text-justify text-gray-700">
                 <p className="text-base md:text-lg leading-relaxed tracking-normal">
-                  Accord Innovations delivers intelligent chatbot solutions that transform customer interactions. Our AI-powered chatbots provide 24/7 support, handle customer queries efficiently, and deliver personalized responses. We integrate advanced natural language processing and machine learning capabilities to ensure your chatbot understands context, learns from interactions, and continuously improves its performance.
+                  Trifectanet delivers intelligent chatbot solutions that transform customer interactions. Our AI-powered chatbots provide 24/7 support, handle customer queries efficiently, and deliver personalized responses. We integrate advanced natural language processing and machine learning capabilities to ensure your chatbot understands context, learns from interactions, and continuously improves its performance.
                 </p>
               </div>
             </div>

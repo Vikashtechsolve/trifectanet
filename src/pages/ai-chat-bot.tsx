@@ -29,7 +29,7 @@ const AiChatBot: React.FC = () => {
               </h2>
               <div className="space-y-4 md:space-y-6">
                 <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-                  At Accord Innovations, we take a user-centric approach to AI and chatbot development that focuses on creating intelligent, intuitive, and effective solutions. Our team works closely with clients to understand their unique requirements, challenges, and user expectations before designing a tailored solution.
+                  At Trifectanet, we take a user-centric approach to AI and chatbot development that focuses on creating intelligent, intuitive, and effective solutions. Our team works closely with clients to understand their unique requirements, challenges, and user expectations before designing a tailored solution.
                 </p>
                 <p className="text-base md:text-lg text-gray-700 leading-relaxed">
                   We follow an iterative development methodology that allows for continuous feedback and refinement throughout the process. This approach ensures that the final AI and chatbot solutions not only meet technical specifications but also deliver exceptional user experiences and business value.
@@ -56,12 +56,12 @@ const AiChatBot: React.FC = () => {
             </div>
             <div className="order-2">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8">
-                <span className="text-[#f47847]">Accord Innovations'</span>{" "}
+                <span className="text-[#f47847]">Trifectanet'</span>{" "}
                 <span className="text-[#0a3d62]">Contribution</span>
               </h2>
               <div className="space-y-4 md:space-y-6">
                 <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-                  Accord Innovations provides comprehensive AI and chatbot solutions that transform how businesses interact with their customers. Our expertise in natural language processing, machine learning, and user experience design helps organizations leverage the full potential of these technologies to drive engagement and growth.
+                  Trifectanet provides comprehensive AI and chatbot solutions that transform how businesses interact with their customers. Our expertise in natural language processing, machine learning, and user experience design helps organizations leverage the full potential of these technologies to drive engagement and growth.
                 </p>
                 <p className="text-base md:text-lg text-gray-700 leading-relaxed">
                   We offer end-to-end development services, from initial assessment and strategy development to implementation, testing, and ongoing optimization. Our solutions are built on industry-leading platforms and best practices, ensuring seamless integration and optimal performance for your business.

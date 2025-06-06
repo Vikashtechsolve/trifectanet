@@ -11,8 +11,8 @@ const SoftwareDevelopmentServices: React.FC = () => {
 
   const faqData = [
     {
-      question: "What types of software development services does Accord Innovations offer?",
-      answer: "Accord Innovations offers a comprehensive range of software development services including web development, mobile app development, data science solutions, back-end development, software tools development, and embedded systems. Our services are tailored to meet the specific needs of businesses across various industries."
+      question: "What types of software development services does Trifectanet offer?",
+      answer: "Trifectanet offers a comprehensive range of software development services including web development, mobile app development, data science solutions, back-end development, software tools development, and embedded systems. Our services are tailored to meet the specific needs of businesses across various industries."
     },
     {
       question: "How long does it typically take to complete a software development project?",
@@ -66,7 +66,7 @@ const SoftwareDevelopmentServices: React.FC = () => {
                   We deliver cutting-edge software solutions that empower businesses to thrive in the digital age. Our expertise spans across multiple domains and technologies.
                 </p>
                 <p className="text-base md:text-lg leading-relaxed tracking-normal">
-                  At Accord Innovations, we offer a comprehensive suite of Software Development Services that cater to the diverse needs of businesses in the digital era. Our services are the driving force behind transforming your ideas and concepts into tangible, high-performing software solutions.
+                  At Trifectanet, we offer a comprehensive suite of Software Development Services that cater to the diverse needs of businesses in the digital era. Our services are the driving force behind transforming your ideas and concepts into tangible, high-performing software solutions.
                 </p>
               </div>
             </div>

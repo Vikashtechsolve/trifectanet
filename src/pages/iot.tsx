@@ -28,7 +28,7 @@ const IoT: React.FC = () => {
               </h2>
               <div className="space-y-6 max-w-prose text-justify text-gray-700">
                 <p className="text-base md:text-lg leading-relaxed tracking-normal">
-                  Accord's AI and IoT solutions are designed to cater to a wide range of industries and use cases. From Smart Homes, where automation and enhanced security redefine daily living, to the cutting-edge technology in Self-Driving Cars, improving safety and efficiency on the roads, our expertise spans diverse domains. In Retail Analytics, we empower retailers with data-driven insights into customer behavior, inventory management, and personalized shopping experiences. Our AI and IoT solutions also fortify Security Devices, making surveillance smarter and more responsive. Moreover, we revolutionize urban living with Smart Cities and Traffic Management solutions, optimizing traffic flow, reducing congestion, and enhancing public safety through real-time data analysis and AI-driven decision-making.
+                  Trifectanet's AI and IoT solutions are designed to cater to a wide range of industries and use cases. From Smart Homes, where automation and enhanced security redefine daily living, to the cutting-edge technology in Self-Driving Cars, improving safety and efficiency on the roads, our expertise spans diverse domains. In Retail Analytics, we empower retailers with data-driven insights into customer behavior, inventory management, and personalized shopping experiences. Our AI and IoT solutions also fortify Security Devices, making surveillance smarter and more responsive. Moreover, we revolutionize urban living with Smart Cities and Traffic Management solutions, optimizing traffic flow, reducing congestion, and enhancing public safety through real-time data analysis and AI-driven decision-making.
                 </p>
               </div>
             </div>
@@ -57,7 +57,7 @@ const IoT: React.FC = () => {
               </h2>
               <div className="space-y-6 max-w-prose text-justify text-gray-700">
                 <p className="text-base md:text-lg leading-relaxed tracking-normal">
-                  At Accord Innovations, we are committed to helping businesses sidestep unexpected downtime, unlock predictive insights, foster product innovation, maximize efficiency, and fortify risk management. Our solutions propel your business into a realm of limitless possibilities, where the transformative potential of IoT becomes a tangible reality. Whether it's optimizing operations, improving customer experiences, or innovating new products and services, our IoT services serve as the catalysts for your success in the digital age.
+                  At Trifectanet, we are committed to helping businesses sidestep unexpected downtime, unlock predictive insights, foster product innovation, maximize efficiency, and fortify risk management. Our solutions propel your business into a realm of limitless possibilities, where the transformative potential of IoT becomes a tangible reality. Whether it's optimizing operations, improving customer experiences, or innovating new products and services, our IoT services serve as the catalysts for your success in the digital age.
                 </p>
               </div>
             </div>

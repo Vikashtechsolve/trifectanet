@@ -270,7 +270,7 @@ const Services: React.FC = () => {
           Delivering Excellence Through Our Services  
           </h2>
           <p className="text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          At Accord Innovations, we offer business solutions that are based on advanced machine learning tools with automated feature engineering capabilities. These allow smooth operations and smarter data-based decision-making.          </p>
+          At Trifecta Net, we offer business solutions that are based on advanced machine learning tools with automated feature engineering capabilities. These allow smooth operations and smarter data-based decision-making.          </p>
         </div>
         
         {/* Hexagonal grid services */}

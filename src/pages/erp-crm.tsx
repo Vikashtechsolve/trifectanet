@@ -28,7 +28,7 @@ const ErpCrm: React.FC = () => {
               </h2>
               <div className="space-y-6 max-w-prose text-justify text-gray-700">
                 <p className="text-base md:text-lg leading-relaxed tracking-normal">
-                  At Accord Innovations, we take a holistic approach to ERP and CRM implementation. Our methodology begins with a thorough analysis of your business processes and requirements, followed by a customized strategy that aligns with your organizational goals. We ensure seamless integration of systems while maintaining data integrity and optimizing workflows.
+                  At Trifectanet, we take a holistic approach to ERP and CRM implementation. Our methodology begins with a thorough analysis of your business processes and requirements, followed by a customized strategy that aligns with your organizational goals. We ensure seamless integration of systems while maintaining data integrity and optimizing workflows.
                 </p>
               </div>
             </div>
@@ -57,7 +57,7 @@ const ErpCrm: React.FC = () => {
               </h2>
               <div className="space-y-6 max-w-prose text-justify text-gray-700">
                 <p className="text-base md:text-lg leading-relaxed tracking-normal">
-                  Accord Innovations delivers comprehensive ERP and CRM solutions that transform your business operations. Our services include system implementation, customization, integration, and ongoing support. We help you streamline processes, enhance customer relationships, and drive business growth through data-driven insights and automated workflows.
+                  Trifectanet delivers comprehensive ERP and CRM solutions that transform your business operations. Our services include system implementation, customization, integration, and ongoing support. We help you streamline processes, enhance customer relationships, and drive business growth through data-driven insights and automated workflows.
                 </p>
               </div>
             </div>

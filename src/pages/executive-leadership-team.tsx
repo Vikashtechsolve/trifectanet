@@ -16,7 +16,7 @@ const ExecutiveLeadershipTeam: React.FC = () => {
               <span className="text-[#f47847]">Leadership Team</span>
             </h1>
             <p className="text-lg md:text-xl lg:text-2xl max-w-3xl text-gray-300">
-              Meet the visionary leaders driving innovation and excellence at Accord Innovations.
+              Meet the visionary leaders driving innovation and excellence at Trifectanet.
             </p>
           </div>
 

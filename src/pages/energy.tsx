@@ -47,23 +47,23 @@ const Energy: React.FC = () => {
       </div>
     </div>
 
-    {/* Accord Innovations' Contribution Section - Image Left, Content Right */}
+    {/* Trifectanet' Contribution Section - Image Left, Content Right */}
     <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
       <div className="relative order-2 md:order-1 self-center">
         <img 
           src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-          alt="Accord Innovations' Contribution" 
+          alt="Trifectanet' Contribution" 
           className="rounded-lg shadow-xl w-[500px] h-[350px] object-cover"
         />
       </div>
       <div className="order-1 md:order-2 self-center">
         <h2 className="text-4xl md:text-5xl font-bold mb-8">
-          <span className="text-[#f47847]">Accord Innovations'</span>{" "}
+          <span className="text-[#f47847]">Trifectanet'</span>{" "}
           <span className="text-[#0a3d62]">Contribution</span>
         </h2>
         <div className="space-y-6 max-w-prose text-justify text-gray-700">
           <p className="text-lg leading-relaxed tracking-normal">
-            Accord Innovations delivers comprehensive energy technology solutions that address the unique challenges of modern energy operations. Our suite includes grid management systems, asset performance management, predictive maintenance platforms, renewable energy integration tools, and energy analytics solutions.
+            Trifectanet delivers comprehensive energy technology solutions that address the unique challenges of modern energy operations. Our suite includes grid management systems, asset performance management, predictive maintenance platforms, renewable energy integration tools, and energy analytics solutions.
           </p>
           <p className="text-lg leading-relaxed tracking-normal">
             We specialize in implementing smart grid technologies, IoT-based monitoring systems, advanced analytics platforms, and cybersecurity solutions for critical infrastructure. Our solutions integrate seamlessly with existing energy systems, providing real-time visibility, predictive insights, and automated workflows that enhance operational efficiency, improve reliability, and support sustainability initiatives.

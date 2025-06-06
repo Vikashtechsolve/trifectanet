@@ -52,12 +52,12 @@ const MobilitySolutions: React.FC = () => {
             </div>
             <div className="order-2 flex flex-col justify-center h-full">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8">
-                <span className="text-[#f47847]">Accord Innovations</span>{" "}
+                <span className="text-[#f47847]">Trifectanet</span>{" "}
                 <span className="text-[#0a3d62]">Advantage</span>
               </h2>
               <div className="space-y-6 max-w-prose text-justify text-gray-700">
                 <p className="text-base md:text-lg leading-relaxed tracking-normal">
-                Accord Innovations specializes in tailoring Mobility Solutions that cater to your specific business needs. Our frameworks are designed to empower your enterprise to navigate the mobile landscape with agility and foresight. Our Mobility Solutions encompass a wide range of services, including mobile app development, enterprise mobility management, mobile security, and user experience design. We prioritize seamless user experiences across the board, ensuring that your employees and customers can access critical information and services on the go. Our solutions minimize downtime, enhance ROI predictability, and drive higher adoption rates, amplifying productivity to new heights.
+                Trifectanet specializes in tailoring Mobility Solutions that cater to your specific business needs. Our frameworks are designed to empower your enterprise to navigate the mobile landscape with agility and foresight. Our Mobility Solutions encompass a wide range of services, including mobile app development, enterprise mobility management, mobile security, and user experience design. We prioritize seamless user experiences across the board, ensuring that your employees and customers can access critical information and services on the go. Our solutions minimize downtime, enhance ROI predictability, and drive higher adoption rates, amplifying productivity to new heights.
                 </p>
               </div>
             </div>
