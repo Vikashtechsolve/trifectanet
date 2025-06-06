@@ -104,13 +104,13 @@ const AboutTrifectanet: React.FC = () => {
               className="space-y-6 max-w-prose text-justify text-gray-700"
             >
               <p>
-                At Trifect, we lead the way in Hyper Automation, Artificial Intelligence (AI), and cognitive technologies, powered by our proprietary Solution Accelerators that provide a distinct competitive edge. With over 13 years of industry experience, we have successfully helped organizations worldwide navigate their digital transformation journeys.
+                At Trifecta, we lead the way in Hyper Automation, Artificial Intelligence (AI), and cognitive technologies, powered by our proprietary Solution Accelerators that provide a distinct competitive edge. With over 7 years of industry experience, we have successfully helped organizations worldwide navigate their digital transformation journeys.
               </p>
               <p>
                 Our expertise extends to Generative AI (GenAI) across various business functions, including ITSM, HRSD, IRM, DevOps, ITOM, and custom application development. Through Enterprise Service Management (ESM) services and enhanced governance solutions, we empower organizations to optimize their IT infrastructure, streamline operations, and stay ahead in an ever-evolving business landscape.
               </p>
               <p>
-                Since our inception in 2011, Trifect has remained committed to delivering cost-effective and innovative ESM consulting services to enterprises globally, helping them unlock new efficiencies and drive long-term success.
+                Since our inception in 2017, Trifecta has remained committed to delivering cost-effective and innovative ESM consulting services to enterprises globally, helping them unlock new efficiencies and drive long-term success.
               </p>
             </motion.div>
             <motion.div 
@@ -188,7 +188,7 @@ const AboutTrifectanet: React.FC = () => {
               </div>
               <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Industry Experience</h3>
               <p className="text-base text-gray-600 relative z-10 leading-relaxed flex-grow">
-                Over 13 years of experience in digital transformation and enterprise solutions.
+                Over 7 years of experience in digital transformation and enterprise solutions.
               </p>
               <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#f47847] group-hover:w-full transition-all duration-700 ease-out"></div>
             </motion.div>
@@ -245,7 +245,7 @@ const AboutTrifectanet: React.FC = () => {
               </div>
               <h3 className="text-xl font-bold mb-4 text-white group-hover:text-[#f47847] transition-colors duration-300">Founded</h3>
               <p className="text-base text-white/80 relative z-10 leading-relaxed flex-grow">
-                2011
+                2017
               </p>
               <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#f47847] group-hover:w-full transition-all duration-700 ease-out"></div>
             </motion.div>
@@ -285,7 +285,7 @@ const AboutTrifectanet: React.FC = () => {
               </div>
               <h3 className="text-xl font-bold mb-4 text-white group-hover:text-[#f47847] transition-colors duration-300">Headquarters</h3>
               <p className="text-base text-white/80 relative z-10 leading-relaxed flex-grow">
-                Malaysia - Kuala Lumpur
+                India - Gurugram
               </p>
               <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#f47847] group-hover:w-full transition-all duration-700 ease-out"></div>
             </motion.div>
@@ -305,7 +305,7 @@ const AboutTrifectanet: React.FC = () => {
               </div>
               <h3 className="text-xl font-bold mb-4 text-white group-hover:text-[#f47847] transition-colors duration-300">Global Presence</h3>
               <p className="text-base text-white/80 relative z-10 leading-relaxed flex-grow">
-                India, Singapore, Thailand, Indonesia, Philippines & USA
+                India
               </p>
               <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#f47847] group-hover:w-full transition-all duration-700 ease-out"></div>
             </motion.div>
