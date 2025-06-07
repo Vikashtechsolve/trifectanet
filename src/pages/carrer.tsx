@@ -99,16 +99,11 @@ const Career: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.8 }}
-              className="flex flex-col sm:flex-row gap-4 mt-8"
-            >
+              className="flex flex-col sm:flex-row gap-4 mt-8"            >
               <a href="#application-form" className="px-8 py-3 bg-[#f47847] text-white text-lg font-semibold rounded-lg hover:bg-[#e66a3a] transition-all duration-300 transform hover:scale-105 hover:shadow-lg inline-flex items-center justify-center">
                 Apply Now
                 <Send className="w-5 h-5 ml-2" />
               </a>
-              <button className="px-8 py-3 bg-white text-gray-900 text-lg font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 hover:shadow-lg inline-flex items-center justify-center">
-                Learn More
-                <ChevronDown className="w-5 h-5 ml-2" />
-              </button>
             </motion.div>
           </div>
           
@@ -227,7 +222,7 @@ const Career: React.FC = () => {
                     <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
                   </svg>
                   <p className="text-gray-600 italic">
-                    "Working at Trifectanethas been transformative for my career. The collaborative environment and focus on innovation have allowed me to grow both personally and professionally. The work-life balance is excellent, and I've never felt more valued as an employee."
+                    "Working at Trifectanet has been transformative for my career. The collaborative environment and focus on innovation have allowed me to grow both personally and professionally. The work-life balance is excellent, and I've never felt more valued as an employee."
                   </p>
                 </div>
                 <div className="flex items-center">
@@ -238,7 +233,7 @@ const Career: React.FC = () => {
                       </svg>
                     ))}
                   </div>
-                  <span className="ml-2 text-sm text-gray-500">5 years at Accord</span>
+                  <span className="ml-2 text-sm text-gray-500">5 years at Trifecta</span>
                 </div>
               </div>
 
@@ -273,7 +268,7 @@ const Career: React.FC = () => {
                       </svg>
                     ))}
                   </div>
-                  <span className="ml-2 text-sm text-gray-500">3 years at Accord</span>
+                  <span className="ml-2 text-sm text-gray-500">3 years at Trifecta</span>
                 </div>
               </div>
 
@@ -311,12 +306,18 @@ const Career: React.FC = () => {
                   <span className="ml-2 text-sm text-gray-500">2 years at Accord</span>
                 </div>
               </div>
-            </div>
-
-            <div className="mt-16 text-center">
-              <button className="px-8 py-4 bg-[#0C4A6E] text-white text-lg font-semibold rounded-lg hover:bg-[#0a3d62] transition-colors duration-300 transform hover:scale-105">
+            </div>            <div className="mt-16 text-center">
+              <a 
+                href="#application-form"
+                className="px-8 py-4 bg-[#0C4A6E] text-white text-lg font-semibold rounded-lg hover:bg-[#0a3d62] transition-colors duration-300 transform hover:scale-105 inline-flex items-center justify-center"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById('application-form')?.scrollIntoView({ behavior: 'smooth' });
+                }}
+              >
                 Join Our Team
-              </button>
+                <Send className="w-5 h-5 ml-2" />
+              </a>
             </div>
           </div>
         </div>
@@ -379,14 +380,15 @@ const Career: React.FC = () => {
                   <p className="text-gray-600">Receive an offer letter and begin your journey with Trifectanet after completing the onboarding process.</p>
                 </div>
               </div>
-            </div>
-
-            <div className="mt-12 text-center">
+            </div>            <div className="mt-12 text-center">
               <button 
-                onClick={() => setShowApplicationForm(true)}
-                className="px-8 py-4 bg-[#0C4A6E] text-white text-lg font-semibold rounded-lg hover:bg-[#0a3d62] transition-colors duration-300 transform hover:scale-105"
+                onClick={() => {
+                  document.getElementById('application-form')?.scrollIntoView({ behavior: 'smooth' });
+                }}
+                className="px-8 py-4 bg-[#0C4A6E] text-white text-lg font-semibold rounded-lg hover:bg-[#0a3d62] transition-colors duration-300 transform hover:scale-105 inline-flex items-center justify-center"
               >
                 Apply Now
+                <Send className="w-5 h-5 ml-2" />
               </button>
             </div>
           </div>

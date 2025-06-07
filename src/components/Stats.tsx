@@ -29,10 +29,10 @@ const Stats: React.FC = () => {
           <div className="w-full md:w-5/12 mb-10 md:mb-0 bg-[#072c4b] rounded-lg p-6 md:p-8">
             <h2 className="text-2xl font-bold mb-6 text-white border-b border-gray-700 pb-4">Our Impact By The Numbers</h2>
             <div className="grid grid-cols-2 gap-2">
-              <StatItem number="15+" label="Years of Experience" />
+              <StatItem number="7+" label="Years of Experience" />
               <StatItem number="1000+" label="Team Members" />
               <StatItem number="500+" label="Active Clients" />
-              <StatItem number="6+" label="Branch Office Locations" />
+              
             </div>
             <div className="mt-6 text-center">
               <button 

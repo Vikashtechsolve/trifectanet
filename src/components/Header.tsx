@@ -80,7 +80,10 @@ const Header: React.FC<HeaderProps> = () => {
           <div className="flex justify-between items-center h-14 md:h-16">
             {/* Logo */}
             <div className="flex-shrink-0 flex items-center">
-              <div className="flex items-center">
+              <div className="flex items-center cursor-pointer" onClick={() => {
+                navigate('/');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }}>
                 {/* SVG representation of the logo */}
                 <div className="mr-2 hidden xs:block">
                   <svg width="32" height="28" viewBox="0 0 40 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -89,7 +92,10 @@ const Header: React.FC<HeaderProps> = () => {
                   </svg>
                 </div>
                 {/* Text logo */}
-                <img src="/images/Trifectanet_logo.png" alt="Trifecta Net" className="w-28 h-28 md:w-26 md:h-16 mr-6 mt-2" />
+                <img src="/images/Trifectanet_logo.png" alt="Trifecta Net" className="w-20 h-12 sm:w-28 sm:h-16 md:w-28 md:h-14 lg:w-36 lg:h-16 mr-4 mt-2 hover:opacity-90 transition-opacity" />
+
+
+
                 <span className="text-xl sm:text-2xl font-bold text-white whitespace-nowrap">
                   <span className="text-[#f47847]"> </span>
                 </span>
@@ -144,9 +150,6 @@ const Header: React.FC<HeaderProps> = () => {
 
             {/* Right side buttons - desktop */}
             <div className="hidden md:flex items-center space-x-2 lg:space-x-4">
-              <button className="bg-[#f47847] text-white px-3 py-1.5 lg:px-4 lg:py-2 rounded-full text-sm font-medium hover:bg-opacity-90 transition-colors">
-                Get Started
-              </button>
             </div>
           </div>
         </div>
@@ -203,11 +206,7 @@ const Header: React.FC<HeaderProps> = () => {
                   Change Region
                 </button>
               </div>
-              <div className="mt-3 px-3">
-                <button className="w-full bg-[#f47847] text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-opacity-90 transition-colors">
-                  Get Started
-                </button>
-              </div>
+              {/* Removed Get Started button */}
             </div>
           </div>
         </div>

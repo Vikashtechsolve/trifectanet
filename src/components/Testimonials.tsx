@@ -128,27 +128,7 @@ const TestimonialCard: React.FC<TestimonialProps> = ({
           <div className="text-sm sm:text-base md:text-lg lg:text-xl mb-3 sm:mb-5 md:mb-8 animate-slideInRight">{statLabel || ''}</div>
           <p className="text-sm sm:text-base md:text-lg animate-fadeIn transition-opacity duration-1000 delay-300 line-clamp-4 sm:line-clamp-none">{description}</p>
         </div>
-        
-        {/* Buttons */}
-        <div className="mt-4 sm:mt-6 flex flex-wrap gap-3 sm:gap-4 animate-slideInUp">
-          <button className="flex items-center text-white hover:text-[#f47847] transition-all duration-300 group text-sm sm:text-base">
-            <span className="flex items-center justify-center bg-[#f47847] rounded-full w-6 h-6 sm:w-8 sm:h-8 mr-2 group-hover:animate-pulse">
-              <Play className="h-3 w-3 sm:h-4 sm:w-4 ml-0.5" />
-            </span>
-            <span className="relative overflow-hidden inline-block">
-              Watch Video
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#f47847] group-hover:w-full transition-all duration-300"></span>
-            </span>
-          </button>
-          
-          <button className="flex items-center text-white hover:text-[#f47847] transition-colors group text-sm sm:text-base">
-            <span className="relative overflow-hidden inline-block">
-              Learn More
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#f47847] group-hover:w-full transition-all duration-300"></span>
-            </span>
-            <ArrowRight className="ml-1 sm:ml-2 h-4 w-4 sm:h-5 sm:w-5 transition-transform duration-300 group-hover:translate-x-1" />
-          </button>
-        </div>
+          {/* No buttons */}
       </div>
     </div>
   );
@@ -283,12 +263,6 @@ const Testimonials: React.FC = () => {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#052e49] leading-tight mb-6 md:mb-0 md:max-w-xl animate-float">
             When our customers work, the world works
           </h2>
-          <a 
-            href="#" 
-            className="hidden md:block bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full font-medium transition-all duration-300 hover:shadow-lg transform hover:-translate-y-1"
-          >
-            See All Customer Stories
-          </a>
         </div>
         
         {/* Active Testimonial Card Container */}
@@ -333,16 +307,6 @@ const Testimonials: React.FC = () => {
               <ChevronRight className="h-4 w-4 sm:h-5 sm:w-5 text-white" />
             </button>
           </div>
-        </div>
-        
-        {/* Mobile CTA */}
-        <div className="md:hidden mb-8 sm:mb-12">
-          <a 
-            href="#" 
-            className="block text-center bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full font-medium transition-all duration-300 hover:shadow-lg"
-          >
-            See All Customer Stories
-          </a>
         </div>
         
         {/* Progress bar */}
@@ -429,4 +393,4 @@ const Testimonials: React.FC = () => {
   );
 };
 
-export default Testimonials; 
+export default Testimonials;

@@ -22,7 +22,11 @@ const Footer: React.FC = () => {
             <img src="/images/Trifectanet_logo.png " alt="Trifecta Net Logo" className="h-12 w-auto mb-4" />
             <p className="mb-2">People-Powered Performance</p>
             <p className="mb-2">+91 9540622138, +91 9117018454</p>
-            <p className="mb-2">support@trifectanet.com</p>
+            <p className="mb-2">
+              <a href="mailto:vikashtechsolution@gmail.com" className="hover:text-[#f47847] transition-colors duration-300">
+                vikashtechsolution@gmail.com
+              </a>
+            </p>
           </div>
           
           <FooterColumn title="Main Links">

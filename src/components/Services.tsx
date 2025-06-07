@@ -272,7 +272,6 @@ const Services: React.FC = () => {
           <p className="text-gray-300 max-w-2xl mx-auto leading-relaxed">
           At Trifecta Net, we offer business solutions that are based on advanced machine learning tools with automated feature engineering capabilities. These allow smooth operations and smarter data-based decision-making.          </p>
         </div>
-        
         {/* Hexagonal grid services */}
         <div className="hex-container relative mx-auto" style={{ height: containerHeight, maxWidth: '100%' }}>
           {services.map((service, index) => (
@@ -287,17 +286,9 @@ const Services: React.FC = () => {
             />
           ))}
         </div>
-        
-        {/* View all services button */}
-        <div className="text-center mt-12 md:mt-16">
-          <button className="bg-gradient-to-r from-[#f47847] to-[#f47847]/80 text-white px-6 py-3 md:px-8 md:py-4 rounded-full font-medium hover:shadow-lg hover:from-[#f47847]/90 hover:to-[#f47847]/70 transition-all duration-300 inline-flex items-center group">
-            View All Services
-            <ChevronRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
-          </button>
-        </div>
       </div>
     </section>
   );
 };
 
-export default Services; 
+export default Services;

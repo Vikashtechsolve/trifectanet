@@ -1,7 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
+import { useNavigate } from 'react-router-dom';
+
 const Overview: React.FC = () => {
+  const navigate = useNavigate();
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
@@ -128,8 +131,9 @@ const Overview: React.FC = () => {
           </h2>
           <p className="text-lg md:text-xl mb-6 md:mb-8 max-w-2xl mx-auto"> {/* Adjusted responsive text size */}
             Let's discuss how our innovative solutions can help you achieve your business goals.
-          </p>
-          <button className="bg-[#f47847] text-white px-6 py-2.5 md:px-8 md:py-3 rounded-full font-medium hover:bg-opacity-90 transition-colors text-base md:text-lg"> {/* Adjusted padding and text size */}
+          </p>          <button 
+            onClick={() => navigate('/contact')} 
+            className="bg-[#f47847] text-white px-6 py-2.5 md:px-8 md:py-3 rounded-full font-medium hover:bg-opacity-90 transition-colors text-base md:text-lg">
             Contact Us
           </button>
         </div>

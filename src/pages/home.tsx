@@ -1,4 +1,5 @@
 import React, { useState,useEffect, useContext } from 'react'
+import { useNavigate } from 'react-router-dom'
 import Stats from '../components/Stats'
 import Services from '../components/Services'
 import Solutions from '../components/Solutions'
@@ -11,6 +12,7 @@ import { ChevronRight } from 'lucide-react'
 import { LayoutContext } from '../layout'
 
 const Home: React.FC = () => {
+    const navigate = useNavigate();
     const context = useContext(LayoutContext);
 
     if (!context) {
@@ -93,12 +95,15 @@ const Home: React.FC = () => {
                <p className="text-xl md:text-2xl mb-8 font-light">
                  {heroSlides[activeSlide].description}
                </p>
-               <div className="flex flex-wrap gap-4">
-                 <button className="bg-[#f47847] text-white px-6 py-3 rounded-full font-medium hover:bg-opacity-90 transition-colors inline-flex items-center">
+               <div className="flex flex-wrap gap-4">                 <button 
+                   onClick={() => navigate('/career')}
+                   className="bg-[#f47847] text-white px-6 py-3 rounded-full font-medium hover:bg-opacity-90 transition-colors inline-flex items-center">
                    Get Started
                    <ChevronRight className="ml-2 h-5 w-5" />
                  </button>
-                 <button className="border-2 border-white text-white px-6 py-3 rounded-full font-medium hover:bg-white hover:text-[#0a3d62] transition-colors">
+                 <button 
+                   onClick={() => navigate('/mobility-solutions')}
+                   className="border-2 border-white text-white px-6 py-3 rounded-full font-medium hover:bg-white hover:text-[#0a3d62] transition-colors">
                    View Solutions
                  </button>
                </div>
@@ -169,5 +174,4 @@ export default Home
 
 
 
-     
-  
+

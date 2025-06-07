@@ -21,18 +21,14 @@ const ContactUs: React.FC = () => {
   };
 
   const locationData = [
-    {
-      country: 'India',
+    {      country: 'India',
       company: 'Trifectanet Pvt. Ltd. ',
       address: [
         '545,Off, Golf Course Road,',
         'Sector 43, Gurugram,',
-        'Gurugram, Haryana 122002,',
-      
-      ],
-      email: 'support@trifectanet.com',
-      phone: '+91 9540622138',
-      fax: '+91 9117018454'
+        'Gurugram, Haryana 122002,',      ],
+      email: 'vikashtechsolution@gmail.com',
+      phone: '+91 9117018454 / +91 9540622138'
     },
 
   ];
@@ -134,17 +130,15 @@ const ContactUs: React.FC = () => {
                 transition={{ duration: 0.6, delay: 1 }}
                 className="flex items-center space-x-4 pt-2"
               >
-                <div className="flex items-center space-x-2 hover:text-[#f47847] transition-colors duration-300">
-                  <svg className="w-4 h-4 text-[#f47847]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="flex items-center space-x-2 hover:text-[#f47847] transition-colors duration-300">                  <svg className="w-4 h-4 text-[#f47847]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>
-                  <span className="text-white text-sm md:text-base hover:text-[#f47847] transition-colors duration-300">+91 9540622138</span>
+                  <span className="text-white text-sm md:text-base hover:text-[#f47847] transition-colors duration-300">+91 9117018454 / +91 9540622138</span>
                 </div>
-                <div className="flex items-center space-x-2 hover:text-[#f47847] transition-colors duration-300">
-                  <svg className="w-4 h-4 text-[#f47847]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="flex items-center space-x-2 hover:text-[#f47847] transition-colors duration-300">                  <svg className="w-4 h-4 text-[#f47847]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
-                  <span className="text-white text-sm md:text-base hover:text-[#f47847] transition-colors duration-300">support@trifectanet.com</span>
+                  <a href="mailto:vikashtechsolution@gmail.com" className="text-white text-sm md:text-base hover:text-[#f47847] transition-colors duration-300">vikashtechsolution@gmail.com</a>
                 </div>
               </motion.div>
             </div>
@@ -164,11 +158,10 @@ const ContactUs: React.FC = () => {
             {/* Left Column - Location Cards */}
             <motion.div
               initial={{ x: -20, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.6 }}
+              animate={{ x: 0, opacity: 1 }}              transition={{ duration: 0.6, delay: 0.6 }}
               className="space-y-6"
             >
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">Our Global Offices</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-6">Our Office</h2>
               
               <div className="space-y-4">
                 {locationData.map((location, index) => (
@@ -225,8 +218,7 @@ const ContactUs: React.FC = () => {
                                 {location.email}
                               </a>
                             </p>
-                            
-                            {location.phone && (
+                              {location.phone && (
                               <p className="flex items-center">
                                 <svg className="w-4 h-4 mr-2 text-[#f47847]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -234,15 +226,6 @@ const ContactUs: React.FC = () => {
                                 <a href={`tel:${location.phone}`} className="hover:text-[#f47847] transition-colors duration-300">
                                   {location.phone}
                                 </a>
-                              </p>
-                            )}
-                            
-                            {location.fax && (
-                              <p className="flex items-center">
-                                <svg className="w-4 h-4 mr-2 text-[#f47847]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
-                                </svg>
-                                <span>{location.fax}</span>
                               </p>
                             )}
                           </div>
