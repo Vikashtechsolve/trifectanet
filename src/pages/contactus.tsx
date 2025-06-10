@@ -1,16 +1,14 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import emailjs from '@emailjs/browser';
 
 const ContactUs: React.FC = () => {
-  const [formState, setFormState] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    message: '',
-    mailingList: false
-  });
-
   const [activeLocation, setActiveLocation] = useState<number | null>(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<{
+    message: string;
+    isError: boolean;
+  } | null>(null);
 
   const handleInputFocus = (e: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     e.target.parentElement?.classList.add('transform', 'scale-[1.02]');
@@ -20,6 +18,42 @@ const ContactUs: React.FC = () => {
     e.target.parentElement?.classList.remove('transform', 'scale-[1.02]');
   };
 
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus(null);
+
+    const form = e.currentTarget;
+    
+    try {      const formData = new FormData(form);
+      const templateParams = {
+        name: formData.get('name'),
+        email: formData.get('email'),
+        message: formData.get('message')
+      };
+
+      await emailjs.send(
+        'service_s83o9tq',        // Your Service ID
+        'template_3wwnsvk',       // Your Template ID
+        templateParams,
+        'VYUN_C-C3YKuhmc-P'      // Your Public Key
+      );
+
+      setSubmitStatus({
+        message: 'Message sent successfully!',
+        isError: false,
+      });
+      form.reset();
+    } catch (error) {
+      setSubmitStatus({
+        message: 'Failed to send message. Please try again.',
+        isError: true,
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   const locationData = [
     {      country: 'India',
       company: 'Trifectanet Pvt. Ltd. ',
@@ -27,7 +61,7 @@ const ContactUs: React.FC = () => {
         '545,Off, Golf Course Road,',
         'Sector 43, Gurugram,',
         'Gurugram, Haryana 122002,',      ],
-      email: 'vikashtechsolution@gmail.com',
+      email: 'vikashdubeytechsolution@gmail.com',
       phone: '+91 9117018454 / +91 9540622138'
     },
 
@@ -138,7 +172,7 @@ const ContactUs: React.FC = () => {
                 <div className="flex items-center space-x-2 hover:text-[#f47847] transition-colors duration-300">                  <svg className="w-4 h-4 text-[#f47847]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
-                  <a href="mailto:vikashtechsolution@gmail.com" className="text-white text-sm md:text-base hover:text-[#f47847] transition-colors duration-300">vikashtechsolution@gmail.com</a>
+                  <a href="mailto:vikashtechsolution@gmail.com" className="text-white text-sm md:text-base hover:text-[#f47847] transition-colors duration-300">vikashdubeytechsolution@gmail.com</a>
                 </div>
               </motion.div>
             </div>
@@ -245,43 +279,51 @@ const ContactUs: React.FC = () => {
               className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300"
             >
               <h2 className="text-2xl font-bold text-gray-900 mb-8">Ask us anything</h2>
-              <form className="space-y-6">
+              <form className="space-y-6" onSubmit={handleSubmit}>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <motion.div whileHover={{ scale: 1.02 }} className="transition-transform duration-300">
                     <input
                       type="text"
+                      name="first_name"
                       placeholder="First name"
                       className="w-full px-4 py-3 rounded-lg bg-gray-100 border-transparent focus:border-[#f47847] focus:bg-white focus:ring-0 transition-all duration-300"
                       onFocus={handleInputFocus}
                       onBlur={handleInputBlur}
+                      required
                     />
                   </motion.div>
                   <motion.div whileHover={{ scale: 1.02 }} className="transition-transform duration-300">
                     <input
                       type="text"
+                      name="last_name"
                       placeholder="Last name"
                       className="w-full px-4 py-3 rounded-lg bg-gray-100 border-transparent focus:border-[#f47847] focus:bg-white focus:ring-0 transition-all duration-300"
                       onFocus={handleInputFocus}
                       onBlur={handleInputBlur}
+                      required
                     />
                   </motion.div>
                 </div>
                 <motion.div whileHover={{ scale: 1.02 }} className="transition-transform duration-300">
                   <input
                     type="email"
+                    name="email"
                     placeholder="Email"
                     className="w-full px-4 py-3 rounded-lg bg-gray-100 border-transparent focus:border-[#f47847] focus:bg-white focus:ring-0 transition-all duration-300"
                     onFocus={handleInputFocus}
                     onBlur={handleInputBlur}
+                    required
                   />
                 </motion.div>
                 <motion.div whileHover={{ scale: 1.02 }} className="transition-transform duration-300">
                   <textarea
+                    name="message"
                     placeholder="How can we help?"
                     rows={4}
                     className="w-full px-4 py-3 rounded-lg bg-gray-100 border-transparent focus:border-[#f47847] focus:bg-white focus:ring-0 transition-all duration-300"
                     onFocus={handleInputFocus}
                     onBlur={handleInputBlur}
+                    required
                   ></textarea>
                 </motion.div>
                 <motion.div 
@@ -302,10 +344,26 @@ const ContactUs: React.FC = () => {
                   whileTap={{ scale: 0.98 }}
                   type="submit"
                   className="w-full py-3 px-6 text-center text-white font-medium bg-[#0a3d62] rounded-lg hover:bg-[#0a3d62]/90 transition-all duration-300 shadow-md hover:shadow-lg"
+                  disabled={isSubmitting}
                 >
-                  Submit
+                  {isSubmitting ? 'Sending...' : 'Submit'}
                 </motion.button>
               </form>
+
+              {/* Submit Status Message */}
+              {submitStatus && (
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: 10 }}
+                  transition={{ duration: 0.4 }}
+                  className={`mt-6 p-4 rounded-lg text-sm font-medium ${
+                    submitStatus.isError ? 'bg-red-50 text-red-700' : 'bg-green-50 text-green-700'
+                  }`}
+                >
+                  {submitStatus.message}
+                </motion.div>
+              )}
             </motion.div>
           </div>
         </div>

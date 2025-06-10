@@ -1,9 +1,34 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import { motion } from 'framer-motion';
 import { ChevronDown, Upload, Briefcase, Mail, Phone, User, Calendar, FileText, Send, Globe, Linkedin, Info } from 'lucide-react';
 
-const Career: React.FC = () => {
-  const [isVisible, setIsVisible] = useState({
+// Initialize EmailJS
+emailjs.init('VYUN_C-C3YKuhmc-P');
+
+// TypeScript interfaces
+interface VisibilityState {
+  hero: boolean;
+  whyJoinUs: boolean;
+  testimonials: boolean;
+  applicationProcess: boolean;
+  benefits: boolean;
+}
+
+interface FormData {
+  fullName: string;
+  email: string;
+  phone: string;
+  position: string;
+  experience: string;
+  resume: File | null;
+  coverLetter: string;
+  portfolio: string;
+  linkedin: string;
+}
+
+const Career: React.FC = (): JSX.Element => {
+  const [visibility, setVisibility] = useState<VisibilityState>({
     hero: false,
     whyJoinUs: false,
     testimonials: false,
@@ -11,17 +36,21 @@ const Career: React.FC = () => {
     benefits: false
   });
 
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<FormData>({
     fullName: '',
     email: '',
     phone: '',
     position: '',
     experience: '',
-    resume: null as File | null,
+    resume: null,
     coverLetter: '',
     portfolio: '',
     linkedin: ''
   });
+
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<{ message: string; isError: boolean; } | null>(null);
+  const form = useRef<HTMLFormElement>(null);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
@@ -34,6 +63,12 @@ const Career: React.FC = () => {
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, files } = e.target;
     if (files && files[0]) {
+      // Check file size (5MB limit)
+      if (files[0].size > 5 * 1024 * 1024) {
+        alert('File size too large. Please upload a file smaller than 5MB');
+        e.target.value = '';
+        return;
+      }
       setFormData(prev => ({
         ...prev,
         [name]: files[0]
@@ -41,18 +76,88 @@ const Career: React.FC = () => {
     }
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission logic here
-    console.log('Form submitted:', formData);
+    if (!form.current) return;
+
+    setIsSubmitting(true);
+    setSubmitStatus(null);
+
+    try {      // Convert resume file to URL if it exists
+      let resumeUrl = '';
+      if (formData.resume instanceof File) {
+        const reader = new FileReader();
+        resumeUrl = await new Promise<string>((resolve, reject) => {
+          reader.onload = (e) => {
+            const result = e.target?.result;
+            if (typeof result === 'string' && result.length < 40 * 1024) { // 40KB limit
+              resolve(result);
+            } else {
+              reject(new Error('Resume file too large. Please upload a file smaller than 40KB.'));
+            }
+          };
+          reader.onerror = () => reject(new Error('Error reading file'));
+          reader.readAsDataURL(formData.resume);
+        });
+      }      const templateParams = {
+        position: formData.position,
+        fullName: formData.fullName,
+        email: formData.email,
+        phone: formData.phone,
+        experience: formData.experience + " years",
+        portfolio: formData.portfolio || 'Not provided',
+        linkedin: formData.linkedin || 'Not provided',
+        coverLetter: formData.coverLetter || 'Not provided',
+        resume_url: resumeUrl || 'Not provided'
+      };
+
+      if (JSON.stringify(templateParams).length > 50000) { // EmailJS 50KB limit
+        throw new Error('Application data too large. Please use a smaller resume file or shorten your responses.');
+      }
+
+      await emailjs.send(
+        'service_s83o9tq',
+        'template_3wwnsvk',
+        templateParams,
+        'VYUN_C-C3YKuhmc-P'
+      );
+
+      setSubmitStatus({
+        message: 'Your application has been submitted successfully!',
+        isError: false
+      });
+      
+      // Reset form
+      setFormData({
+        fullName: '',
+        email: '',
+        phone: '',
+        position: '',
+        experience: '',
+        resume: null,
+        coverLetter: '',
+        portfolio: '',
+        linkedin: ''
+      });
+      
+      form.current.reset();
+    } catch (error) {
+      console.error('Error submitting application:', error);
+      setSubmitStatus({
+        message: error instanceof Error ? error.message : 'Failed to submit application. Please try again.',
+        isError: true
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   useEffect(() => {
-    const timer1 = setTimeout(() => setIsVisible(prev => ({ ...prev, hero: true })), 100);
-    const timer2 = setTimeout(() => setIsVisible(prev => ({ ...prev, whyJoinUs: true })), 300);
-    const timer3 = setTimeout(() => setIsVisible(prev => ({ ...prev, testimonials: true })), 500);
-    const timer4 = setTimeout(() => setIsVisible(prev => ({ ...prev, applicationProcess: true })), 700);
-    const timer5 = setTimeout(() => setIsVisible(prev => ({ ...prev, benefits: true })), 900);
+    const timer1 = setTimeout(() => setVisibility(prev => ({ ...prev, hero: true })), 100);
+    const timer2 = setTimeout(() => setVisibility(prev => ({ ...prev, whyJoinUs: true })), 300);
+    const timer3 = setTimeout(() => setVisibility(prev => ({ ...prev, testimonials: true })), 500);
+    const timer4 = setTimeout(() => setVisibility(prev => ({ ...prev, applicationProcess: true })), 700);
+    const timer5 = setTimeout(() => setVisibility(prev => ({ ...prev, benefits: true })), 900);
 
     return () => {
       clearTimeout(timer1);
@@ -66,7 +171,7 @@ const Career: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <div className={`relative min-h-[70vh] bg-gradient-to-br from-[#0C4A6E] to-[#0a3d62] transition-all duration-1000 ${isVisible.hero ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+      <div className={`relative min-h-[70vh] bg-gradient-to-br from-[#0C4A6E] to-[#0a3d62] transition-all duration-1000 ${visibility.hero ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')] bg-cover bg-center opacity-20"></div>
         <div className="container mx-auto px-4 h-[70vh] flex items-center relative z-10">
           <div className="w-full lg:w-1/2 pl-4 lg:pl-20">
@@ -145,7 +250,7 @@ const Career: React.FC = () => {
       </motion.div>
 
       {/* Why Join Us Section */}
-      <div className={`bg-[#0C4A6E] rounded-2xl p-12 text-white transition-all duration-1000 ${isVisible.whyJoinUs ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+      <div className={`bg-[#0C4A6E] rounded-2xl p-12 text-white transition-all duration-1000 ${visibility.whyJoinUs ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
         <h2 className="text-3xl font-bold mb-8 text-center">Why Join Trifecta?</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="text-center transform hover:scale-105 transition-all duration-300">
@@ -192,18 +297,17 @@ const Career: React.FC = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className={`text-4xl font-bold text-gray-900 mb-4 transition-all duration-1000 ${isVisible.testimonials ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+              <h2 className={`text-4xl font-bold text-gray-900 mb-4 transition-all duration-1000 ${visibility.testimonials ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
                 <span className="text-[#0C4A6E]">Life at</span>{" "}
                 <span className="text-[#f47847]">Trifecta</span>
               </h2>
-              <p className={`text-xl text-gray-600 max-w-3xl mx-auto transition-all duration-1000 delay-200 ${isVisible.testimonials ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+              <p className={`text-xl text-gray-600 max-w-3xl mx-auto transition-all duration-1000 delay-200 ${visibility.testimonials ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
                 Hear from our team members about their experiences and what makes Trifectanet a great place to work
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {/* Testimonial 1 */}
-              <div className={`bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105 ${isVisible.testimonials ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`} style={{ transitionDelay: '300ms' }}>
+              {/* Testimonial 1 */}              <div className={`bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105 ${visibility.testimonials ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`} style={{ transitionDelay: '300ms' }}>
                 <div className="flex items-center mb-6">
                   <div className="w-16 h-16 rounded-full overflow-hidden mr-4">
                     <img 
@@ -238,7 +342,7 @@ const Career: React.FC = () => {
               </div>
 
               {/* Testimonial 2 */}
-              <div className={`bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105 ${isVisible.testimonials ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`} style={{ transitionDelay: '400ms' }}>
+              <div className={`bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105 ${visibility.testimonials ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`} style={{ transitionDelay: '400ms' }}>
                 <div className="flex items-center mb-6">
                   <div className="w-16 h-16 rounded-full overflow-hidden mr-4">
                     <img 
@@ -273,7 +377,7 @@ const Career: React.FC = () => {
               </div>
 
               {/* Testimonial 3 */}
-              <div className={`bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105 ${isVisible.testimonials ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`} style={{ transitionDelay: '500ms' }}>
+              <div className={`bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105 ${visibility.testimonials ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`} style={{ transitionDelay: '500ms' }}>
                 <div className="flex items-center mb-6">
                   <div className="w-16 h-16 rounded-full overflow-hidden mr-4">
                     <img 
@@ -303,7 +407,7 @@ const Career: React.FC = () => {
                       </svg>
                     ))}
                   </div>
-                  <span className="ml-2 text-sm text-gray-500">2 years at Accord</span>
+                  <span className="ml-2 text-sm text-gray-500">2 years at Trifectanet</span>
                 </div>
               </div>
             </div>            <div className="mt-16 text-center">
@@ -327,15 +431,13 @@ const Career: React.FC = () => {
       <div className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className={`text-4xl font-bold text-gray-900 mb-6 text-center transition-all duration-1000 ${isVisible.applicationProcess ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+            <h2 className={`text-4xl font-bold text-gray-900 mb-6 text-center transition-all duration-1000 ${visibility.applicationProcess ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
               Our Application Process
             </h2>
-            <p className={`text-xl text-gray-600 mb-12 text-center transition-all duration-1000 delay-200 ${isVisible.applicationProcess ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+            <p className={`text-xl text-gray-600 mb-12 text-center transition-all duration-1000 delay-200 ${visibility.applicationProcess ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
               Simple steps to join our team
-            </p>
-
-            <div className="space-y-8">
-              <div className={`flex items-start transition-all duration-500 ${isVisible.applicationProcess ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`} style={{ transitionDelay: '300ms' }}>
+            </p>            <div className="space-y-8">
+              <div className={`flex items-start transition-all duration-500 ${visibility.applicationProcess ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`} style={{ transitionDelay: '300ms' }}>
                 <div className="flex-shrink-0 w-12 h-12 bg-[#0C4A6E] rounded-full flex items-center justify-center text-white font-bold mr-6">
                   1
                 </div>
@@ -343,8 +445,7 @@ const Career: React.FC = () => {
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">Submit Your Application</h3>
                   <p className="text-gray-600">Fill out our online application form and upload your resume and cover letter.</p>
                 </div>
-              </div>
-              <div className={`flex items-start transition-all duration-500 ${isVisible.applicationProcess ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`} style={{ transitionDelay: '400ms' }}>
+              </div>              <div className={`flex items-start transition-all duration-500 ${visibility.applicationProcess ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`} style={{ transitionDelay: '400ms' }}>
                 <div className="flex-shrink-0 w-12 h-12 bg-[#0C4A6E] rounded-full flex items-center justify-center text-white font-bold mr-6">
                   2
                 </div>
@@ -353,7 +454,7 @@ const Career: React.FC = () => {
                   <p className="text-gray-600">Our HR team will review your application and contact you if your profile matches our requirements.</p>
                 </div>
               </div>
-              <div className={`flex items-start transition-all duration-500 ${isVisible.applicationProcess ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`} style={{ transitionDelay: '500ms' }}>
+              <div className={`flex items-start transition-all duration-500 ${visibility.applicationProcess ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`} style={{ transitionDelay: '500ms' }}>
                 <div className="flex-shrink-0 w-12 h-12 bg-[#0C4A6E] rounded-full flex items-center justify-center text-white font-bold mr-6">
                   3
                 </div>
@@ -362,7 +463,7 @@ const Career: React.FC = () => {
                   <p className="text-gray-600">You may be asked to complete a technical assessment or coding challenge relevant to the position.</p>
                 </div>
               </div>
-              <div className={`flex items-start transition-all duration-500 ${isVisible.applicationProcess ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`} style={{ transitionDelay: '600ms' }}>
+              <div className={`flex items-start transition-all duration-500 ${visibility.applicationProcess ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`} style={{ transitionDelay: '600ms' }}>
                 <div className="flex-shrink-0 w-12 h-12 bg-[#0C4A6E] rounded-full flex items-center justify-center text-white font-bold mr-6">
                   4
                 </div>
@@ -371,7 +472,7 @@ const Career: React.FC = () => {
                   <p className="text-gray-600">Meet with our team members through video or in-person interviews to discuss your experience and skills.</p>
                 </div>
               </div>
-              <div className={`flex items-start transition-all duration-500 ${isVisible.applicationProcess ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`} style={{ transitionDelay: '700ms' }}>
+              <div className={`flex items-start transition-all duration-500 ${visibility.applicationProcess ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`} style={{ transitionDelay: '700ms' }}>
                 <div className="flex-shrink-0 w-12 h-12 bg-[#0C4A6E] rounded-full flex items-center justify-center text-white font-bold mr-6">
                   5
                 </div>
@@ -408,9 +509,7 @@ const Career: React.FC = () => {
             <div className="text-center mb-12">
               <h2 className="text-4xl font-bold text-gray-900 mb-4">Apply Now</h2>
               <p className="text-xl text-gray-600">Take the first step towards your next great opportunity</p>
-            </div>
-
-            <form onSubmit={handleSubmit} className="space-y-8 bg-white rounded-2xl p-8 shadow-xl">
+            </div>            <form ref={form} onSubmit={handleSubmit} className="space-y-8 bg-white rounded-2xl p-8 shadow-xl">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {/* Full Name */}
                 <div className="space-y-2">
@@ -577,17 +676,29 @@ const Career: React.FC = () => {
                 />
               </div>
 
-              {/* Submit Button */}
-              <div className="flex justify-end">
+              {/* Submit Button */}              <div className="flex flex-col space-y-4">
                 <motion.button
                   type="submit"
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                  className="px-8 py-4 bg-[#0C4A6E] text-white rounded-xl hover:bg-[#0a3d62] transition-all duration-200 font-medium shadow-lg shadow-[#0C4A6E]/20 hover:shadow-xl hover:shadow-[#0C4A6E]/30 flex items-center justify-center space-x-2"
+                  disabled={isSubmitting}
+                  whileHover={{ scale: isSubmitting ? 1 : 1.02 }}
+                  whileTap={{ scale: isSubmitting ? 1 : 0.98 }}
+                  className="px-8 py-4 bg-[#0C4A6E] text-white rounded-xl hover:bg-[#0a3d62] transition-all duration-200 font-medium shadow-lg shadow-[#0C4A6E]/20 hover:shadow-xl hover:shadow-[#0C4A6E]/30 flex items-center justify-center space-x-2 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  <span>Submit Application</span>
+                  <span>{isSubmitting ? 'Submitting...' : 'Submit Application'}</span>
                   <Send className="w-5 h-5" />
                 </motion.button>
+
+                {submitStatus && (
+                  <div
+                    className={`p-4 rounded-md ${
+                      submitStatus.isError
+                        ? 'bg-red-50 text-red-700 border border-red-200'
+                        : 'bg-green-50 text-green-700 border border-green-200'
+                    }`}
+                  >
+                    {submitStatus.message}
+                  </div>
+                )}
               </div>
             </form>
           </motion.div>
@@ -595,7 +706,7 @@ const Career: React.FC = () => {
       </section>
 
       {/* Benefits Section */}
-      <div className={`bg-[#0C4A6E] rounded-2xl p-12 text-white transition-all duration-1000 ${isVisible.benefits ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+      <div className={`bg-[#0C4A6E] rounded-2xl p-12 text-white transition-all duration-1000 ${visibility.benefits ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
         <h2 className="text-3xl font-bold mb-8 text-center">Benefits of Working at Trifectanet</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="text-center transform hover:scale-105 transition-all duration-300">

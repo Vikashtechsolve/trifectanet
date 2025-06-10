@@ -23,8 +23,8 @@ const Footer: React.FC = () => {
             <p className="mb-2">People-Powered Performance</p>
             <p className="mb-2">+91 9540622138, +91 9117018454</p>
             <p className="mb-2">
-              <a href="mailto:vikashtechsolution@gmail.com" className="hover:text-[#f47847] transition-colors duration-300">
-                vikashtechsolution@gmail.com
+              <a href="mailto:vikashdubeytechsolution@gmail.com" className="hover:text-[#f47847] transition-colors duration-300">
+                vikashdubeytechsolution@gmail.com
               </a>
             </p>
           </div>
